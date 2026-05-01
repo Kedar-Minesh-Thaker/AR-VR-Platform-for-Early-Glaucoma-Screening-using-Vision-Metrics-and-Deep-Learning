@@ -127,7 +127,7 @@ namespace OphthalSuite.Core.Input
             for (int i = 0; i < UnityEngine.Input.touchCount; i++)
             {
                 var t = UnityEngine.Input.GetTouch(i);
-                if (t.phase != TouchPhase.Began) continue;
+                if (t.phase != UnityEngine.TouchPhase.Began) continue;
                 ev = new PatientInputEvent
                 {
                     kind = PatientInputKind.Tap,

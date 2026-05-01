@@ -137,22 +137,55 @@ namespace OphthalSuite.Core
         }
 
         /// <summary>
-        /// Attempt to set the Quest display refresh rate via the XR Display subsystem.
+        /// Attempt to set the Quest display refresh rate.
+        /// Uses reflection to find the correct API (varies across Unity/Oculus plugin versions).
         /// </summary>
         private void TrySetRefreshRate(float rate)
         {
-            var displays = new List<XRDisplaySubsystem>();
-            SubsystemManager.GetSubsystems(displays);
-            foreach (var display in displays)
+            try
             {
-                if (!display.running) continue;
-                if (display.TryRequestDisplayRefreshRate(rate))
+                // Try Oculus-specific API via reflection: Unity.XR.Oculus.Performance.TrySetDisplayRefreshRate
+                var oculusPerf = System.Type.GetType("Unity.XR.Oculus.Performance, Unity.XR.Oculus");
+                if (oculusPerf != null)
                 {
-                    Debug.Log($"XRSetup: Display refresh rate set to {rate} Hz.");
-                    return;
+                    var method = oculusPerf.GetMethod("TrySetDisplayRefreshRate",
+                        System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Static);
+                    if (method != null)
+                    {
+                        var result = method.Invoke(null, new object[] { rate });
+                        Debug.Log($"XRSetup: Display refresh rate → {rate} Hz (Oculus API).");
+                        return;
+                    }
                 }
+
+                // Try OVRManager.display.displayFrequency via reflection
+                var ovrMgr = System.Type.GetType("OVRManager, Oculus.VR");
+                if (ovrMgr != null)
+                {
+                    var displayProp = ovrMgr.GetProperty("display",
+                        System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Static);
+                    if (displayProp != null)
+                    {
+                        var display = displayProp.GetValue(null);
+                        if (display != null)
+                        {
+                            var freqProp = display.GetType().GetProperty("displayFrequency");
+                            if (freqProp != null && freqProp.CanWrite)
+                            {
+                                freqProp.SetValue(display, rate);
+                                Debug.Log($"XRSetup: Display refresh rate → {rate} Hz (OVRManager).");
+                                return;
+                            }
+                        }
+                    }
+                }
+
+                Debug.Log($"XRSetup: Refresh rate API not found — using headset default.");
             }
-            Debug.Log($"XRSetup: Could not set refresh rate to {rate} Hz (may not be supported).");
+            catch (System.Exception ex)
+            {
+                Debug.LogWarning($"XRSetup: Failed to set refresh rate: {ex.Message}");
+            }
         }
 
         /// <summary>
