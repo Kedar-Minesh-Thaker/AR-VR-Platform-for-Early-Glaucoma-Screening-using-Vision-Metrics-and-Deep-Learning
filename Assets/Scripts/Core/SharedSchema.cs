@@ -97,4 +97,14 @@ namespace OphthalSuite.Core
         public string[] testSequence;            // ordered list of TestIds
         public string[] completedTests;          // TestIds already finished
     }
+
+    // ── DB Sync envelope (sent at end of session for laptop-side storage) ────
+
+    [Serializable]
+    public class DbSyncEnvelope
+    {
+        public string messageType = "DB_SYNC";
+        /// <summary>Pre-built JSON string from DatabaseManager.ExportSessionJson()</summary>
+        public string rawJson;
+    }
 }

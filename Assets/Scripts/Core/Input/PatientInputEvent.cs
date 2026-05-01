@@ -1,5 +1,5 @@
 // PatientInputEvent.cs
-// Shared patient-screen input envelope (Android touch, editor mouse, future controllers).
+// Shared patient-screen input envelope (Android touch, editor mouse, XR controllers).
 
 using System;
 using UnityEngine;
@@ -10,7 +10,8 @@ namespace OphthalSuite.Core.Input
     {
         Tap = 0,
         MouseButton = 1,
-        Cancel = 2
+        Cancel = 2,
+        Controller = 3
     }
 
     [Serializable]

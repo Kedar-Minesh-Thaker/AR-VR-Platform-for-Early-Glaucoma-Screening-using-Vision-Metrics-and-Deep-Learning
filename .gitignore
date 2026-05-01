@@ -69,3 +69,14 @@ sysinfo.txt
 
 # Crashlytics
 crashlytics-build.properties
+
+# Node.js
+node_modules/
+
+# SQLite databases
+*.db
+*.db-journal
+*.db-wal
+
+# ClinicalViewer logs
+ClinicalViewer/logs/

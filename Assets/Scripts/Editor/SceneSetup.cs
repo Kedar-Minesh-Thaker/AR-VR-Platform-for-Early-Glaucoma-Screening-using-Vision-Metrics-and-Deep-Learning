@@ -2,6 +2,7 @@
 // Unity Editor script — one-click scene setup for the OphthalSuite.
 //
 // Menu: OphthalSuite → Setup Scene
+//       OphthalSuite → Setup VR Scene (Quest 2)
 //
 // This script creates all required GameObjects, wires references,
 // and configures the scene for the perimetry integration layer.
@@ -266,8 +267,90 @@ namespace OphthalSuite.Editor
             Debug.Log("SceneSetup: ✓ Scene setup complete.");
         }
 
-        /// <summary>Sets up the scene for Google Cardboard (phone VR box). Runs standard setup first, then adds Cardboard VR components.</summary>
-        [MenuItem("OphthalSuite/Setup VR Scene (Cardboard)")]
+        /// <summary>Sets up the scene for Meta Quest 2 VR. Runs standard setup first, then adds Quest VR components.</summary>
+        [MenuItem("OphthalSuite/Setup VR Scene (Quest 2)")]
+        public static void SetupVRSceneQuest()
+        {
+            // Run the standard scene setup first
+            SetupScene();
+
+            Camera mainCam = Camera.main;
+            if (mainCam == null)
+            {
+                Debug.LogError("SetupVRScene: No Main Camera — run standard Setup Scene first.");
+                return;
+            }
+
+            // ── 1. XRSetup (runtime Quest bootstrap) ────────────────────────────
+            // Quest uses the Oculus XR Plugin; XRSetup handles loader init.
+            if (Object.FindFirstObjectByType<XRSetup>() == null)
+            {
+                var setupGo = new GameObject("XRSetup");
+                setupGo.AddComponent<XRSetup>();
+                Debug.Log("SetupVRScene: Created XRSetup (Quest 2 bootstrap).");
+            }
+
+            // ── 2. EyeOccluder on camera ────────────────────────────────────────
+            if (mainCam.GetComponent<EyeOccluder>() == null)
+            {
+                mainCam.gameObject.AddComponent<EyeOccluder>();
+                Debug.Log("SetupVRScene: Added EyeOccluder to Main Camera.");
+            }
+
+            // ── 3. AudioFeedbackManager ─────────────────────────────────────────
+            if (Object.FindFirstObjectByType<AudioFeedbackManager>() == null)
+            {
+                var audioGo = new GameObject("AudioFeedbackManager");
+                audioGo.AddComponent<AudioFeedbackManager>();
+                Debug.Log("SetupVRScene: Created AudioFeedbackManager.");
+            }
+
+            // ── 4. DatabaseManager ──────────────────────────────────────────────
+            if (Object.FindFirstObjectByType<Database.DatabaseManager>() == null)
+            {
+                var dbGo = new GameObject("DatabaseManager");
+                dbGo.AddComponent<Database.DatabaseManager>();
+                Debug.Log("SetupVRScene: Created DatabaseManager.");
+            }
+
+            // ── 5. EventSystem (for world-space UI in VR) ───────────────────────
+            if (Object.FindFirstObjectByType<EventSystem>() == null)
+            {
+                var esGo = new GameObject("EventSystem",
+                    typeof(EventSystem),
+                    typeof(StandaloneInputModule));
+                Debug.Log("SetupVRScene: Created EventSystem.");
+            }
+
+            // ── Done ────────────────────────────────────────────────────────────
+            EditorUtility.DisplayDialog(
+                "OphthalSuite — Quest 2 VR Setup Complete",
+                "VR components added:\n\n" +
+                "• XRSetup (Quest stereo + 6DOF tracking, 90Hz, FFR OFF)\n" +
+                "• EyeOccluder (digital monocular occlusion)\n" +
+                "• AudioFeedbackManager (click & alert sounds)\n" +
+                "• DatabaseManager (local SQLite storage)\n" +
+                "• EventSystem (UI interaction)\n\n" +
+                "REQUIRED — do these before building:\n\n" +
+                "1. Edit → Project Settings → XR Plug-in Management\n" +
+                "   → Android tab → check 'Oculus'\n" +
+                "   → Uncheck 'Initialize XR on Startup'\n\n" +
+                "2. Player Settings → Android:\n" +
+                "   • Graphics API: OpenGLES3 (or Vulkan)\n" +
+                "   • Minimum API: 29 (Android 10)\n" +
+                "   • Scripting Backend: IL2CPP\n" +
+                "   • Target Arch: ARM64\n" +
+                "   • Texture Compression: ASTC\n\n" +
+                "Patient input: Quest controller trigger or A button.\n" +
+                "Non-tested eye auto-occluded via EyeOccluder.",
+                "OK");
+
+            EditorSceneManager.MarkSceneDirty(EditorSceneManager.GetActiveScene());
+            Debug.Log("SetupVRScene: ✓ Quest 2 VR scene setup complete.");
+        }
+
+        /// <summary>Legacy Cardboard setup — kept for reference but Quest 2 is now primary.</summary>
+        [MenuItem("OphthalSuite/Setup VR Scene (Cardboard — Legacy)")]
         public static void SetupVRScene()
         {
             // Run the standard scene setup first
@@ -281,8 +364,6 @@ namespace OphthalSuite.Editor
             }
 
             // ── 1. XRSetup (runtime Cardboard bootstrap) ────────────────────────
-            // Cardboard handles stereo split + barrel distortion + gyro automatically.
-            // No XR Origin hierarchy needed — Cardboard works with a single Main Camera.
             if (Object.FindFirstObjectByType<XRSetup>() == null)
             {
                 var setupGo = new GameObject("XRSetup");
@@ -308,28 +389,17 @@ namespace OphthalSuite.Editor
 
             // ── Done ────────────────────────────────────────────────────────────
             EditorUtility.DisplayDialog(
-                "OphthalSuite — Cardboard VR Setup Complete",
+                "OphthalSuite — Cardboard VR Setup (Legacy)",
+                "This is the legacy Cardboard setup.\n" +
+                "For Quest 2, use OphthalSuite → Setup VR Scene (Quest 2).\n\n" +
                 "VR components added:\n\n" +
                 "• XRSetup (Cardboard stereo + barrel distortion + gyro)\n" +
                 "• EyeOccluder (digital monocular occlusion)\n" +
-                "• EventSystem (UI interaction)\n\n" +
-                "REQUIRED — do these before building:\n\n" +
-                "1. Window → Package Manager → + → Add from Git URL:\n" +
-                "   https://github.com/googlevr/cardboard-xr-plugin.git\n\n" +
-                "2. Edit → Project Settings → XR Plug-in Management\n" +
-                "   → Android tab → check 'Cardboard XR Plugin'\n\n" +
-                "3. Player Settings → Android:\n" +
-                "   • Graphics API: OpenGLES3 only (remove Vulkan)\n" +
-                "   • Orientation: Landscape Left\n" +
-                "   • Minimum API: 26\n" +
-                "   • Scripting Backend: IL2CPP\n" +
-                "   • Target Arch: ARM64\n\n" +
-                "Patient input: screen tap or Cardboard button.\n" +
-                "Non-tested eye auto-occluded via EyeOccluder.",
+                "• EventSystem (UI interaction)",
                 "OK");
 
             EditorSceneManager.MarkSceneDirty(EditorSceneManager.GetActiveScene());
-            Debug.Log("SetupVRScene: ✓ Cardboard VR scene setup complete.");
+            Debug.Log("SetupVRScene: ✓ Cardboard VR scene setup complete (legacy).");
         }
 
         /// <summary>Creates a screen-space canvas with MainMenuUI (catalog-driven buttons). Add EventSystem if missing.</summary>

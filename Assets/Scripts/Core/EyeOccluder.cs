@@ -7,6 +7,10 @@
 //   OS (left eye)  = occlude right eye display
 //   "" or null      = both eyes visible (binocular)
 //
+// Quest 2 rendering: uses a URP-compatible full-screen blit approach that
+// works with both Multi-Pass and Single-Pass Instanced stereo rendering.
+// We use Camera.stereoActiveEye to determine which eye is being rendered.
+//
 // In non-VR mode: does nothing (the physical eye-patch is used instead).
 
 using UnityEngine;
@@ -28,7 +32,14 @@ namespace OphthalSuite.Core
         private void Awake()
         {
             _cam = GetComponent<Camera>();
-            _blackMat = new Material(Shader.Find("Unlit/Color"));
+            // Use an Unlit/Color shader — compatible with both URP and built-in pipeline
+            var shader = Shader.Find("Unlit/Color");
+            if (shader == null)
+            {
+                // Fallback: try a URP-compatible shader
+                shader = Shader.Find("Universal Render Pipeline/Unlit");
+            }
+            _blackMat = new Material(shader);
             _blackMat.color = Color.black;
         }
 
@@ -73,7 +84,9 @@ namespace OphthalSuite.Core
             _testedEye = "";
         }
 
-        // OnRenderImage is called after the camera renders each eye
+        // OnRenderImage is called after the camera renders each eye.
+        // In Single-Pass Instanced: Unity calls this per-eye with the correct
+        // stereoActiveEye value, so the occlusion still works correctly.
         private void OnRenderImage(RenderTexture src, RenderTexture dest)
         {
             if (!_occluding || !XRSetup.IsVRActive)

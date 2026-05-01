@@ -1,19 +1,21 @@
 // XRSetup.cs
-// Runtime VR bootstrap for Google Cardboard.
-// Initialises the Cardboard XR loader to get stereoscopic side-by-side
-// rendering with barrel distortion and gyro head tracking.
+// Runtime VR bootstrap for Meta Quest 2.
+// Initialises the Oculus XR loader to get stereoscopic rendering
+// with 6DOF head tracking and controller input.
 //
-// In Editor (no Cardboard): falls back silently to flat-screen mode.
+// In Editor (no headset): falls back silently to flat-screen mode.
 //
 // Public API
 // ----------
-//   static bool IsVRActive       – true once Cardboard stereo is running
+//   static bool IsVRActive       – true once Quest stereo is running
 //   static bool IsInitialised    – true after detection completes
 //   void        StartXR()        – turn on VR (stereo split)
 //   void        StopXR()         – turn off VR (flat screen)
 
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR;
 using UnityEngine.XR.Management;
 
 namespace OphthalSuite.Core
@@ -24,9 +26,15 @@ namespace OphthalSuite.Core
         public static bool IsVRActive    { get; private set; }
         public static bool IsInitialised { get; private set; }
 
-        [Header("Cardboard VR")]
+        [Header("Quest VR")]
         [Tooltip("If true, auto-start VR on launch. Set false to start flat and toggle later.")]
         [SerializeField] private bool autoStartVR = true;
+
+        [Tooltip("Target refresh rate for Quest 2 (72, 80, 90, or 120 Hz). 90 recommended for perimetry.")]
+        [SerializeField] private float targetRefreshRate = 90f;
+
+        [Tooltip("Foveated rendering level. 0 = OFF (recommended for perimetry to preserve peripheral clarity).")]
+        [SerializeField] [Range(0, 4)] private int foveatedRenderingLevel = 0;
 
         private void Awake()
         {
@@ -49,7 +57,7 @@ namespace OphthalSuite.Core
         }
 
         /// <summary>
-        /// Initialise Cardboard XR loader → stereo split + barrel distortion + gyro tracking.
+        /// Initialise Oculus XR loader → stereo rendering + 6DOF head tracking.
         /// </summary>
         public void StartXR()
         {
@@ -59,21 +67,20 @@ namespace OphthalSuite.Core
             if (xrManager == null || xrManager.Manager == null)
             {
                 Debug.LogWarning("XRSetup: No XR General Settings found.\n" +
-                    "→ Edit → Project Settings → XR Plug-in Management → enable Cardboard XR Plugin.");
+                    "→ Edit → Project Settings → XR Plug-in Management → enable Oculus.");
                 IsInitialised = true;
                 return;
             }
 
-            // Initialise the loader (Cardboard)
+            // Initialise the loader (Oculus)
             if (!xrManager.Manager.isInitializationComplete)
                 xrManager.Manager.InitializeLoaderSync();
 
             if (xrManager.Manager.activeLoader == null)
             {
                 Debug.LogWarning("XRSetup: No XR loader active — running flat.\n" +
-                    "→ Install Cardboard plugin: Window → Package Manager → + → Add from Git URL\n" +
-                    "→ https://github.com/googlevr/cardboard-xr-plugin.git\n" +
-                    "→ Then enable it in XR Plug-in Management.");
+                    "→ Install Oculus plugin: Window → Package Manager\n" +
+                    "→ Then enable it in XR Plug-in Management (Android tab → Oculus).");
                 IsInitialised = true;
                 return;
             }
@@ -81,11 +88,14 @@ namespace OphthalSuite.Core
             // Start subsystems → stereo rendering begins
             xrManager.Manager.StartSubsystems();
 
+            // Quest 2 optimizations — apply after subsystems are running
+            ApplyQuestSettings();
+
             IsVRActive    = true;
             IsInitialised = true;
 
             Debug.Log($"XRSetup: ✓ VR active — loader: {xrManager.Manager.activeLoader.name}\n" +
-                "Stereoscopic rendering + barrel distortion + gyro tracking enabled.");
+                "Stereoscopic rendering + 6DOF head tracking enabled.");
         }
 
         /// <summary>
@@ -104,6 +114,75 @@ namespace OphthalSuite.Core
 
             IsVRActive = false;
             Debug.Log("XRSetup: VR stopped — flat-screen mode.");
+        }
+
+        /// <summary>
+        /// Apply Quest 2-specific display and rendering settings.
+        /// Must be called AFTER subsystems are started.
+        /// </summary>
+        private void ApplyQuestSettings()
+        {
+            // ── Refresh rate ────────────────────────────────────────────────────
+            // Quest 2 supports 72, 80, 90, 120 Hz. Higher = smoother but more GPU.
+            // 90 Hz recommended for perimetry (good balance of smoothness + battery).
+            TrySetRefreshRate(targetRefreshRate);
+
+            // ── Foveated rendering ──────────────────────────────────────────────
+            // For clinical perimetry we must keep peripheral clarity intact.
+            // Level 0 = OFF. Higher levels blur the edges to save GPU — bad for us.
+            TrySetFoveatedRendering(foveatedRenderingLevel);
+
+            Debug.Log($"XRSetup: Quest settings applied — refresh={targetRefreshRate}Hz, " +
+                      $"foveation=level {foveatedRenderingLevel}");
+        }
+
+        /// <summary>
+        /// Attempt to set the Quest display refresh rate via the XR Display subsystem.
+        /// </summary>
+        private void TrySetRefreshRate(float rate)
+        {
+            var displays = new List<XRDisplaySubsystem>();
+            SubsystemManager.GetSubsystems(displays);
+            foreach (var display in displays)
+            {
+                if (!display.running) continue;
+                if (display.TryRequestDisplayRefreshRate(rate))
+                {
+                    Debug.Log($"XRSetup: Display refresh rate set to {rate} Hz.");
+                    return;
+                }
+            }
+            Debug.Log($"XRSetup: Could not set refresh rate to {rate} Hz (may not be supported).");
+        }
+
+        /// <summary>
+        /// Attempt to disable/set foveated rendering level.
+        /// Uses Unity.XR.Oculus APIs if available, otherwise logs a warning.
+        /// </summary>
+        private void TrySetFoveatedRendering(int level)
+        {
+            // Use reflection to call Unity.XR.Oculus.Performance if the package is present.
+            // This avoids a hard compile-time dependency on the Oculus namespace.
+            try
+            {
+                var oculusPerf = System.Type.GetType("Unity.XR.Oculus.Performance, Unity.XR.Oculus");
+                if (oculusPerf != null)
+                {
+                    var method = oculusPerf.GetMethod("TrySetFoveatedRenderingLevel",
+                        System.Reflection.BindingFlags.Public | System.Reflection.BindingFlags.Static);
+                    if (method != null)
+                    {
+                        method.Invoke(null, new object[] { level });
+                        Debug.Log($"XRSetup: Foveated rendering set to level {level}.");
+                        return;
+                    }
+                }
+                Debug.Log("XRSetup: Oculus Performance API not found — foveation not changed.");
+            }
+            catch (System.Exception ex)
+            {
+                Debug.LogWarning($"XRSetup: Failed to set foveated rendering: {ex.Message}");
+            }
         }
 
         private void OnDestroy()

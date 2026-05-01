@@ -104,9 +104,9 @@ namespace OphthalSuite.Core
             {
                 _canvas.renderMode = RenderMode.WorldSpace;
                 var rt = canvasGo.GetComponent<RectTransform>();
-                rt.sizeDelta = new Vector2(700, 650);
-                canvasGo.transform.localPosition = new Vector3(0f, 0f, 2f);
-                canvasGo.transform.localScale = Vector3.one * 0.002f;
+                rt.sizeDelta = new Vector2(800, 700);
+                canvasGo.transform.localPosition = new Vector3(0f, 0f, 1.8f);
+                canvasGo.transform.localScale = Vector3.one * 0.0018f;
             }
             else
             {
@@ -129,7 +129,7 @@ namespace OphthalSuite.Core
             // Title
             var title = MakeText(_startPanel.transform, "Title",
                 new Vector2(0.05f, 0.90f), new Vector2(0.95f, 0.98f),
-                "DhrishtiLite", 30, TextAnchor.MiddleCenter,
+                "DhrishtiLite", 34, TextAnchor.MiddleCenter,
                 new Color(0.5f, 0.85f, 0.95f));
             title.fontStyle = FontStyle.Bold;
 
@@ -291,6 +291,7 @@ namespace OphthalSuite.Core
                 "▶  Start Session", 26, TextAnchor.MiddleCenter,
                 new Color(0.7f, 0.95f, 1f)).fontStyle = FontStyle.Bold;
 
+            _startBtn.onClick.AddListener(() => AudioFeedbackManager.Instance?.PlaySessionStart());
             _startBtn.onClick.AddListener(OnStartClicked);
 
             // VR hint
@@ -298,8 +299,8 @@ namespace OphthalSuite.Core
             {
                 MakeText(_startPanel.transform, "VRHint",
                     new Vector2(0.05f, 0.0f), new Vector2(0.95f, 0.07f),
-                    "Tap screen or press viewer button to respond",
-                    14, TextAnchor.MiddleCenter, new Color(0.5f, 0.5f, 0.55f));
+                    "Point controller and squeeze trigger to respond",
+                    16, TextAnchor.MiddleCenter, new Color(0.5f, 0.5f, 0.55f));
             }
 
             // ── Stop Button (bottom-right, hidden initially) ─────────────────────
@@ -310,6 +311,7 @@ namespace OphthalSuite.Core
             MakeText(stopGo.transform, "Label",
                 Vector2.zero, Vector2.one,
                 "■ End Session", 16, TextAnchor.MiddleCenter, Color.white);
+            _stopBtn.onClick.AddListener(() => AudioFeedbackManager.Instance?.PlayClick());
             _stopBtn.onClick.AddListener(OnStopClicked);
             _stopBtn.gameObject.SetActive(false);
 
@@ -321,6 +323,7 @@ namespace OphthalSuite.Core
             MakeText(skipGo.transform, "Label",
                 Vector2.zero, Vector2.one,
                 "⏭ Skip Test", 16, TextAnchor.MiddleCenter, Color.white);
+            _skipBtn.onClick.AddListener(() => AudioFeedbackManager.Instance?.PlayClick());
             _skipBtn.onClick.AddListener(OnSkipClicked);
             _skipBtn.gameObject.SetActive(false);
 

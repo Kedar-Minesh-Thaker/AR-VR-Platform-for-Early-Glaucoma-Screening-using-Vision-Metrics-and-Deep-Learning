@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using UnityEngine;
+using OphthalSuite.Core.Database;
 using OphthalSuite.Core;
 
 namespace OphthalSuite.Core
@@ -122,6 +123,9 @@ namespace OphthalSuite.Core
             // Write session meta
             string metaJson = JsonUtility.ToJson(_ctx, true);
             File.WriteAllText(Path.Combine(_sessionDir, "session_meta.json"), metaJson);
+
+            // ── Database: insert session ─────────────────────────────────────
+            DatabaseManager.Instance?.InsertSession(_ctx);
 
             // Open unified CSV
             string csvPath = Path.Combine(_sessionDir, "session_trials.csv");
@@ -244,6 +248,9 @@ namespace OphthalSuite.Core
                 _csvWriter.Flush();
             }
 
+            // ── Database: insert trial ───────────────────────────────────────
+            DatabaseManager.Instance?.InsertTrial(evt);
+
             // Broadcast to doctor dashboard
             if (SharedDoctorMirror.Instance != null)
             {
@@ -271,6 +278,9 @@ namespace OphthalSuite.Core
 
             // Write per-test result
             WritePerTestResult(result);
+
+            // ── Database: insert test result ─────────────────────────────────
+            DatabaseManager.Instance?.InsertTestResult(result);
 
             Debug.Log($"AppOrchestrator: test {result.testId} complete — {result.reliabilityCategory}");
         }
@@ -300,9 +310,23 @@ namespace OphthalSuite.Core
             string summaryPath = Path.Combine(_sessionDir, "session_summary.json");
             File.WriteAllText(summaryPath, JsonUtility.ToJson(complete, true));
 
+            // ── Database: finalise session ───────────────────────────────────
+            DatabaseManager.Instance?.UpdateSessionEnd(_ctx.sessionId, totalDuration,
+                _testResults.Count > 0 ? "completed" : "aborted");
+
             // Broadcast to dashboard
             if (SharedDoctorMirror.Instance != null)
+            {
                 SharedDoctorMirror.Instance.Broadcast(complete);
+
+                // Broadcast full session data for laptop-side DB sync
+                string dbSync = DatabaseManager.Instance?.ExportSessionJson(_ctx.sessionId);
+                if (!string.IsNullOrEmpty(dbSync) && dbSync != "{}")
+                {
+                    SharedDoctorMirror.Instance.Broadcast(
+                        new DbSyncEnvelope { rawJson = dbSync });
+                }
+            }
 
             Debug.Log($"AppOrchestrator: session ended — {_ctx.sessionId} ({totalDuration:F1}s)");
         }
