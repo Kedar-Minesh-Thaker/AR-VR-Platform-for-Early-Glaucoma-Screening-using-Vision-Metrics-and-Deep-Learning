@@ -17,6 +17,7 @@ using UnityEditor;
 using UnityEditor.SceneManagement;
 using Perimetry;
 using OphthalSuite.Core;
+using OphthalSuite.Core.Database;
 using OphthalSuite.Perimetry;
 using OphthalSuite.ContrastSensitivity.Csv1000;
 using OphthalSuite.ContrastSensitivity.PelliRobson;
@@ -306,10 +307,10 @@ namespace OphthalSuite.Editor
             }
 
             // ── 4. DatabaseManager ──────────────────────────────────────────────
-            if (Object.FindFirstObjectByType<Database.DatabaseManager>() == null)
+            if (Object.FindFirstObjectByType<DatabaseManager>() == null)
             {
                 var dbGo = new GameObject("DatabaseManager");
-                dbGo.AddComponent<Database.DatabaseManager>();
+                dbGo.AddComponent<DatabaseManager>();
                 Debug.Log("SetupVRScene: Created DatabaseManager.");
             }
 
