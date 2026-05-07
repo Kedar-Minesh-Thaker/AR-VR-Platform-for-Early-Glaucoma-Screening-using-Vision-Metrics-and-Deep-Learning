@@ -221,7 +221,34 @@ namespace OphthalSuite.Editor
                 Debug.Log("SceneSetup: Added SessionStartUI to AppOrchestrator.");
             }
 
-            // Wire ALL test modules into the testModules list
+            // ── 7b. TestInstructionUI ────────────────────────────────────────────
+            TestInstructionUI instrUI = Object.FindFirstObjectByType<TestInstructionUI>();
+            if (instrUI == null)
+            {
+                var instrGo = new GameObject("TestInstructionUI");
+                instrUI = instrGo.AddComponent<TestInstructionUI>();
+                Debug.Log("SceneSetup: Created TestInstructionUI.");
+            }
+
+            // ── 7c. SessionEndUI ─────────────────────────────────────────────────
+            SessionEndUI endUI = Object.FindFirstObjectByType<SessionEndUI>();
+            if (endUI == null)
+            {
+                var endGo = new GameObject("SessionEndUI");
+                endUI = endGo.AddComponent<SessionEndUI>();
+                Debug.Log("SceneSetup: Created SessionEndUI.");
+            }
+
+            // ── 7d. PatientHUD ───────────────────────────────────────────────────
+            PatientHUD hud = Object.FindFirstObjectByType<PatientHUD>();
+            if (hud == null)
+            {
+                var hudGo = new GameObject("PatientHUD");
+                hud = hudGo.AddComponent<PatientHUD>();
+                Debug.Log("SceneSetup: Created PatientHUD.");
+            }
+
+            // Wire ALL test modules + UI refs into AppOrchestrator
             var orchSO = new SerializedObject(orchestrator);
             var testModulesProp = orchSO.FindProperty("testModules");
             if (testModulesProp != null)
@@ -235,6 +262,10 @@ namespace OphthalSuite.Editor
                 }
                 Debug.Log($"SceneSetup: Wired {allModules.Count} test modules into AppOrchestrator.");
             }
+
+            // Wire instruction + session end UI
+            SetSerializedRef(orchSO, "instructionUI", instrUI);
+            SetSerializedRef(orchSO, "sessionEndUI", endUI);
             orchSO.ApplyModifiedProperties();
 
             // ── 8. Remove old DoctorMirror if present ────────────────────────────
@@ -321,6 +352,18 @@ namespace OphthalSuite.Editor
                     typeof(EventSystem),
                     typeof(StandaloneInputModule));
                 Debug.Log("SetupVRScene: Created EventSystem.");
+            }
+
+            // ── 6. VRPointer (controller laser for UI interaction) ──────────────
+            if (Object.FindFirstObjectByType<VRPointer>() == null)
+            {
+                // Add VRPointer to XRSetup GameObject (it auto-bootstraps in VR)
+                var xrSetup = Object.FindFirstObjectByType<XRSetup>();
+                if (xrSetup != null)
+                {
+                    xrSetup.gameObject.AddComponent<VRPointer>();
+                    Debug.Log("SetupVRScene: Added VRPointer to XRSetup.");
+                }
             }
 
             // ── Done ────────────────────────────────────────────────────────────
@@ -412,7 +455,7 @@ namespace OphthalSuite.Editor
             canvas.renderMode = RenderMode.ScreenSpaceOverlay;
             var scaler = canvasGo.GetComponent<CanvasScaler>();
             scaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
-            scaler.referenceResolution = new Vector2(1080, 1920);
+            scaler.referenceResolution = new Vector2(1920, 1080);
 
             var bg = new GameObject("Background", typeof(RectTransform), typeof(Image));
             bg.transform.SetParent(canvasGo.transform, false);

@@ -80,3 +80,8 @@ node_modules/
 
 # ClinicalViewer logs
 ClinicalViewer/logs/
+
+# Plastic SCM / Unity transient (do not commit)
+.plastic/
+.utmp/
+Assets/_Recovery/

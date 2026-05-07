@@ -1,0 +1,5502 @@
+[
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9516,
+    "probabilities": {
+      "Normal": 0.9516,
+      "MildDeficit": 0.0249,
+      "SevereDeficit": 0.0235
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9346,
+    "probabilities": {
+      "Normal": 0.9346,
+      "MildDeficit": 0.0331,
+      "SevereDeficit": 0.0323
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9383,
+    "probabilities": {
+      "Normal": 0.9383,
+      "MildDeficit": 0.0317,
+      "SevereDeficit": 0.03
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.5642,
+    "probabilities": {
+      "Normal": 0.5642,
+      "MildDeficit": 0.2148,
+      "SevereDeficit": 0.2211
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.4554,
+    "probabilities": {
+      "Normal": 0.4554,
+      "MildDeficit": 0.2339,
+      "SevereDeficit": 0.3106
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.3886,
+    "probabilities": {
+      "Normal": 0.3886,
+      "MildDeficit": 0.2261,
+      "SevereDeficit": 0.3853
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9576,
+    "probabilities": {
+      "Normal": 0.9576,
+      "MildDeficit": 0.0219,
+      "SevereDeficit": 0.0205
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5216,
+    "probabilities": {
+      "Normal": 0.5216,
+      "MildDeficit": 0.2147,
+      "SevereDeficit": 0.2636
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9506,
+    "probabilities": {
+      "Normal": 0.9506,
+      "MildDeficit": 0.0243,
+      "SevereDeficit": 0.0251
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9447,
+    "probabilities": {
+      "Normal": 0.9447,
+      "MildDeficit": 0.0282,
+      "SevereDeficit": 0.0271
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.956,
+    "probabilities": {
+      "Normal": 0.956,
+      "MildDeficit": 0.0221,
+      "SevereDeficit": 0.0219
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9481,
+    "probabilities": {
+      "Normal": 0.9481,
+      "MildDeficit": 0.0266,
+      "SevereDeficit": 0.0252
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.546,
+    "probabilities": {
+      "Normal": 0.546,
+      "MildDeficit": 0.209,
+      "SevereDeficit": 0.245
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.4797,
+    "probabilities": {
+      "Normal": 0.4797,
+      "MildDeficit": 0.2186,
+      "SevereDeficit": 0.3017
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6334,
+    "probabilities": {
+      "Normal": 0.6334,
+      "MildDeficit": 0.1869,
+      "SevereDeficit": 0.1797
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9492,
+    "probabilities": {
+      "Normal": 0.9492,
+      "MildDeficit": 0.0263,
+      "SevereDeficit": 0.0245
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.606,
+    "probabilities": {
+      "Normal": 0.606,
+      "MildDeficit": 0.1993,
+      "SevereDeficit": 0.1948
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.963,
+    "probabilities": {
+      "Normal": 0.963,
+      "MildDeficit": 0.0188,
+      "SevereDeficit": 0.0182
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9568,
+    "probabilities": {
+      "Normal": 0.9568,
+      "MildDeficit": 0.0223,
+      "SevereDeficit": 0.0209
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.4404,
+    "probabilities": {
+      "Normal": 0.4404,
+      "MildDeficit": 0.2255,
+      "SevereDeficit": 0.334
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6488,
+    "probabilities": {
+      "Normal": 0.6488,
+      "MildDeficit": 0.1769,
+      "SevereDeficit": 0.1743
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6543,
+    "probabilities": {
+      "Normal": 0.6543,
+      "MildDeficit": 0.1749,
+      "SevereDeficit": 0.1707
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9555,
+    "probabilities": {
+      "Normal": 0.9555,
+      "MildDeficit": 0.0226,
+      "SevereDeficit": 0.0219
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.4985,
+    "probabilities": {
+      "Normal": 0.4985,
+      "MildDeficit": 0.2121,
+      "SevereDeficit": 0.2894
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9563,
+    "probabilities": {
+      "Normal": 0.9563,
+      "MildDeficit": 0.0223,
+      "SevereDeficit": 0.0214
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6385,
+    "probabilities": {
+      "Normal": 0.6385,
+      "MildDeficit": 0.1824,
+      "SevereDeficit": 0.1791
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9635,
+    "probabilities": {
+      "Normal": 0.9635,
+      "MildDeficit": 0.019,
+      "SevereDeficit": 0.0176
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9665,
+    "probabilities": {
+      "Normal": 0.9665,
+      "MildDeficit": 0.0177,
+      "SevereDeficit": 0.0158
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.4992,
+    "probabilities": {
+      "Normal": 0.4992,
+      "MildDeficit": 0.2186,
+      "SevereDeficit": 0.2822
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9576,
+    "probabilities": {
+      "Normal": 0.9576,
+      "MildDeficit": 0.0218,
+      "SevereDeficit": 0.0206
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.64,
+    "probabilities": {
+      "Normal": 0.64,
+      "MildDeficit": 0.1832,
+      "SevereDeficit": 0.1767
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5239,
+    "probabilities": {
+      "Normal": 0.5239,
+      "MildDeficit": 0.2189,
+      "SevereDeficit": 0.2572
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9451,
+    "probabilities": {
+      "Normal": 0.9451,
+      "MildDeficit": 0.0282,
+      "SevereDeficit": 0.0267
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5536,
+    "probabilities": {
+      "Normal": 0.5536,
+      "MildDeficit": 0.2057,
+      "SevereDeficit": 0.2407
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9539,
+    "probabilities": {
+      "Normal": 0.9539,
+      "MildDeficit": 0.0239,
+      "SevereDeficit": 0.0222
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6135,
+    "probabilities": {
+      "Normal": 0.6135,
+      "MildDeficit": 0.1971,
+      "SevereDeficit": 0.1894
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9589,
+    "probabilities": {
+      "Normal": 0.9589,
+      "MildDeficit": 0.021,
+      "SevereDeficit": 0.0201
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9574,
+    "probabilities": {
+      "Normal": 0.9574,
+      "MildDeficit": 0.0219,
+      "SevereDeficit": 0.0207
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5519,
+    "probabilities": {
+      "Normal": 0.5519,
+      "MildDeficit": 0.2107,
+      "SevereDeficit": 0.2374
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9554,
+    "probabilities": {
+      "Normal": 0.9554,
+      "MildDeficit": 0.0227,
+      "SevereDeficit": 0.022
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5538,
+    "probabilities": {
+      "Normal": 0.5538,
+      "MildDeficit": 0.2089,
+      "SevereDeficit": 0.2373
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9556,
+    "probabilities": {
+      "Normal": 0.9556,
+      "MildDeficit": 0.0229,
+      "SevereDeficit": 0.0215
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.4912,
+    "probabilities": {
+      "Normal": 0.4912,
+      "MildDeficit": 0.2152,
+      "SevereDeficit": 0.2936
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9416,
+    "probabilities": {
+      "Normal": 0.9416,
+      "MildDeficit": 0.0297,
+      "SevereDeficit": 0.0287
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5897,
+    "probabilities": {
+      "Normal": 0.5897,
+      "MildDeficit": 0.1944,
+      "SevereDeficit": 0.216
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9623,
+    "probabilities": {
+      "Normal": 0.9623,
+      "MildDeficit": 0.019,
+      "SevereDeficit": 0.0187
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5549,
+    "probabilities": {
+      "Normal": 0.5549,
+      "MildDeficit": 0.2039,
+      "SevereDeficit": 0.2412
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5344,
+    "probabilities": {
+      "Normal": 0.5344,
+      "MildDeficit": 0.211,
+      "SevereDeficit": 0.2546
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9497,
+    "probabilities": {
+      "Normal": 0.9497,
+      "MildDeficit": 0.0254,
+      "SevereDeficit": 0.0249
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.5463,
+    "probabilities": {
+      "Normal": 0.5463,
+      "MildDeficit": 0.1988,
+      "SevereDeficit": 0.2548
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6474,
+    "probabilities": {
+      "Normal": 0.6474,
+      "MildDeficit": 0.1774,
+      "SevereDeficit": 0.1752
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9578,
+    "probabilities": {
+      "Normal": 0.9578,
+      "MildDeficit": 0.0212,
+      "SevereDeficit": 0.021
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9496,
+    "probabilities": {
+      "Normal": 0.9496,
+      "MildDeficit": 0.0253,
+      "SevereDeficit": 0.0252
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9579,
+    "probabilities": {
+      "Normal": 0.9579,
+      "MildDeficit": 0.0219,
+      "SevereDeficit": 0.0202
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.4636,
+    "probabilities": {
+      "Normal": 0.4636,
+      "MildDeficit": 0.2168,
+      "SevereDeficit": 0.3196
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5833,
+    "probabilities": {
+      "Normal": 0.5833,
+      "MildDeficit": 0.1948,
+      "SevereDeficit": 0.2219
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.5015,
+    "probabilities": {
+      "Normal": 0.5015,
+      "MildDeficit": 0.2161,
+      "SevereDeficit": 0.2824
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5015,
+    "probabilities": {
+      "Normal": 0.5015,
+      "MildDeficit": 0.2222,
+      "SevereDeficit": 0.2763
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9543,
+    "probabilities": {
+      "Normal": 0.9543,
+      "MildDeficit": 0.023,
+      "SevereDeficit": 0.0227
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9528,
+    "probabilities": {
+      "Normal": 0.9528,
+      "MildDeficit": 0.0237,
+      "SevereDeficit": 0.0235
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9514,
+    "probabilities": {
+      "Normal": 0.9514,
+      "MildDeficit": 0.0247,
+      "SevereDeficit": 0.0239
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9672,
+    "probabilities": {
+      "Normal": 0.9672,
+      "MildDeficit": 0.0168,
+      "SevereDeficit": 0.016
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5234,
+    "probabilities": {
+      "Normal": 0.5234,
+      "MildDeficit": 0.2197,
+      "SevereDeficit": 0.2569
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6437,
+    "probabilities": {
+      "Normal": 0.6437,
+      "MildDeficit": 0.1798,
+      "SevereDeficit": 0.1765
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9485,
+    "probabilities": {
+      "Normal": 0.9485,
+      "MildDeficit": 0.0262,
+      "SevereDeficit": 0.0252
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.4892,
+    "probabilities": {
+      "Normal": 0.4892,
+      "MildDeficit": 0.2146,
+      "SevereDeficit": 0.2962
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.56,
+    "probabilities": {
+      "Normal": 0.56,
+      "MildDeficit": 0.2049,
+      "SevereDeficit": 0.2351
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9457,
+    "probabilities": {
+      "Normal": 0.9457,
+      "MildDeficit": 0.0279,
+      "SevereDeficit": 0.0264
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.4848,
+    "probabilities": {
+      "Normal": 0.4848,
+      "MildDeficit": 0.2192,
+      "SevereDeficit": 0.296
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9491,
+    "probabilities": {
+      "Normal": 0.9491,
+      "MildDeficit": 0.026,
+      "SevereDeficit": 0.0249
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9673,
+    "probabilities": {
+      "Normal": 0.9673,
+      "MildDeficit": 0.017,
+      "SevereDeficit": 0.0157
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.495,
+    "probabilities": {
+      "Normal": 0.495,
+      "MildDeficit": 0.2171,
+      "SevereDeficit": 0.2879
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9486,
+    "probabilities": {
+      "Normal": 0.9486,
+      "MildDeficit": 0.0261,
+      "SevereDeficit": 0.0253
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9474,
+    "probabilities": {
+      "Normal": 0.9474,
+      "MildDeficit": 0.0262,
+      "SevereDeficit": 0.0264
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9465,
+    "probabilities": {
+      "Normal": 0.9465,
+      "MildDeficit": 0.0268,
+      "SevereDeficit": 0.0268
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9613,
+    "probabilities": {
+      "Normal": 0.9613,
+      "MildDeficit": 0.0206,
+      "SevereDeficit": 0.0181
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.952,
+    "probabilities": {
+      "Normal": 0.952,
+      "MildDeficit": 0.0247,
+      "SevereDeficit": 0.0232
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5074,
+    "probabilities": {
+      "Normal": 0.5074,
+      "MildDeficit": 0.2235,
+      "SevereDeficit": 0.2691
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.5016,
+    "probabilities": {
+      "Normal": 0.5016,
+      "MildDeficit": 0.2149,
+      "SevereDeficit": 0.2835
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9444,
+    "probabilities": {
+      "Normal": 0.9444,
+      "MildDeficit": 0.0285,
+      "SevereDeficit": 0.0271
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5417,
+    "probabilities": {
+      "Normal": 0.5417,
+      "MildDeficit": 0.2096,
+      "SevereDeficit": 0.2487
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9594,
+    "probabilities": {
+      "Normal": 0.9594,
+      "MildDeficit": 0.0208,
+      "SevereDeficit": 0.0198
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.4758,
+    "probabilities": {
+      "Normal": 0.4758,
+      "MildDeficit": 0.2181,
+      "SevereDeficit": 0.3061
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9468,
+    "probabilities": {
+      "Normal": 0.9468,
+      "MildDeficit": 0.0275,
+      "SevereDeficit": 0.0256
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5372,
+    "probabilities": {
+      "Normal": 0.5372,
+      "MildDeficit": 0.2135,
+      "SevereDeficit": 0.2493
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9519,
+    "probabilities": {
+      "Normal": 0.9519,
+      "MildDeficit": 0.0242,
+      "SevereDeficit": 0.0239
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6729,
+    "probabilities": {
+      "Normal": 0.6729,
+      "MildDeficit": 0.1654,
+      "SevereDeficit": 0.1617
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9552,
+    "probabilities": {
+      "Normal": 0.9552,
+      "MildDeficit": 0.0231,
+      "SevereDeficit": 0.0217
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.5315,
+    "probabilities": {
+      "Normal": 0.5315,
+      "MildDeficit": 0.2071,
+      "SevereDeficit": 0.2614
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6377,
+    "probabilities": {
+      "Normal": 0.6377,
+      "MildDeficit": 0.1834,
+      "SevereDeficit": 0.1789
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6304,
+    "probabilities": {
+      "Normal": 0.6304,
+      "MildDeficit": 0.1862,
+      "SevereDeficit": 0.1834
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5622,
+    "probabilities": {
+      "Normal": 0.5622,
+      "MildDeficit": 0.2046,
+      "SevereDeficit": 0.2332
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9456,
+    "probabilities": {
+      "Normal": 0.9456,
+      "MildDeficit": 0.0277,
+      "SevereDeficit": 0.0268
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.505,
+    "probabilities": {
+      "Normal": 0.505,
+      "MildDeficit": 0.2132,
+      "SevereDeficit": 0.2818
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6854,
+    "probabilities": {
+      "Normal": 0.6854,
+      "MildDeficit": 0.1618,
+      "SevereDeficit": 0.1528
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9641,
+    "probabilities": {
+      "Normal": 0.9641,
+      "MildDeficit": 0.0185,
+      "SevereDeficit": 0.0175
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.673,
+    "probabilities": {
+      "Normal": 0.673,
+      "MildDeficit": 0.1688,
+      "SevereDeficit": 0.1582
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.4906,
+    "probabilities": {
+      "Normal": 0.4906,
+      "MildDeficit": 0.2124,
+      "SevereDeficit": 0.297
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9485,
+    "probabilities": {
+      "Normal": 0.9485,
+      "MildDeficit": 0.026,
+      "SevereDeficit": 0.0256
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.5296,
+    "probabilities": {
+      "Normal": 0.5296,
+      "MildDeficit": 0.2043,
+      "SevereDeficit": 0.2661
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.512,
+    "probabilities": {
+      "Normal": 0.512,
+      "MildDeficit": 0.2083,
+      "SevereDeficit": 0.2797
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9522,
+    "probabilities": {
+      "Normal": 0.9522,
+      "MildDeficit": 0.0245,
+      "SevereDeficit": 0.0233
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5765,
+    "probabilities": {
+      "Normal": 0.5765,
+      "MildDeficit": 0.2011,
+      "SevereDeficit": 0.2224
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.957,
+    "probabilities": {
+      "Normal": 0.957,
+      "MildDeficit": 0.022,
+      "SevereDeficit": 0.0211
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9557,
+    "probabilities": {
+      "Normal": 0.9557,
+      "MildDeficit": 0.0222,
+      "SevereDeficit": 0.0221
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6423,
+    "probabilities": {
+      "Normal": 0.6423,
+      "MildDeficit": 0.1814,
+      "SevereDeficit": 0.1763
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6264,
+    "probabilities": {
+      "Normal": 0.6264,
+      "MildDeficit": 0.1904,
+      "SevereDeficit": 0.1831
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.62,
+    "probabilities": {
+      "Normal": 0.62,
+      "MildDeficit": 0.193,
+      "SevereDeficit": 0.187
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5566,
+    "probabilities": {
+      "Normal": 0.5566,
+      "MildDeficit": 0.2094,
+      "SevereDeficit": 0.234
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5648,
+    "probabilities": {
+      "Normal": 0.5648,
+      "MildDeficit": 0.2051,
+      "SevereDeficit": 0.2301
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5452,
+    "probabilities": {
+      "Normal": 0.5452,
+      "MildDeficit": 0.2095,
+      "SevereDeficit": 0.2453
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9571,
+    "probabilities": {
+      "Normal": 0.9571,
+      "MildDeficit": 0.0226,
+      "SevereDeficit": 0.0203
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.5379,
+    "probabilities": {
+      "Normal": 0.5379,
+      "MildDeficit": 0.2051,
+      "SevereDeficit": 0.257
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.5132,
+    "probabilities": {
+      "Normal": 0.5132,
+      "MildDeficit": 0.208,
+      "SevereDeficit": 0.2788
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9463,
+    "probabilities": {
+      "Normal": 0.9463,
+      "MildDeficit": 0.0278,
+      "SevereDeficit": 0.026
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5638,
+    "probabilities": {
+      "Normal": 0.5638,
+      "MildDeficit": 0.2043,
+      "SevereDeficit": 0.2319
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.957,
+    "probabilities": {
+      "Normal": 0.957,
+      "MildDeficit": 0.0223,
+      "SevereDeficit": 0.0208
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5518,
+    "probabilities": {
+      "Normal": 0.5518,
+      "MildDeficit": 0.2093,
+      "SevereDeficit": 0.2389
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5656,
+    "probabilities": {
+      "Normal": 0.5656,
+      "MildDeficit": 0.2029,
+      "SevereDeficit": 0.2315
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6433,
+    "probabilities": {
+      "Normal": 0.6433,
+      "MildDeficit": 0.1805,
+      "SevereDeficit": 0.1762
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6148,
+    "probabilities": {
+      "Normal": 0.6148,
+      "MildDeficit": 0.1961,
+      "SevereDeficit": 0.189
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5693,
+    "probabilities": {
+      "Normal": 0.5693,
+      "MildDeficit": 0.2013,
+      "SevereDeficit": 0.2294
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9446,
+    "probabilities": {
+      "Normal": 0.9446,
+      "MildDeficit": 0.0287,
+      "SevereDeficit": 0.0267
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9454,
+    "probabilities": {
+      "Normal": 0.9454,
+      "MildDeficit": 0.0273,
+      "SevereDeficit": 0.0273
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9563,
+    "probabilities": {
+      "Normal": 0.9563,
+      "MildDeficit": 0.0224,
+      "SevereDeficit": 0.0213
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9422,
+    "probabilities": {
+      "Normal": 0.9422,
+      "MildDeficit": 0.0295,
+      "SevereDeficit": 0.0283
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9417,
+    "probabilities": {
+      "Normal": 0.9417,
+      "MildDeficit": 0.03,
+      "SevereDeficit": 0.0283
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.4926,
+    "probabilities": {
+      "Normal": 0.4926,
+      "MildDeficit": 0.216,
+      "SevereDeficit": 0.2914
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.4902,
+    "probabilities": {
+      "Normal": 0.4902,
+      "MildDeficit": 0.2158,
+      "SevereDeficit": 0.294
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.5635,
+    "probabilities": {
+      "Normal": 0.5635,
+      "MildDeficit": 0.2039,
+      "SevereDeficit": 0.2327
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9486,
+    "probabilities": {
+      "Normal": 0.9486,
+      "MildDeficit": 0.026,
+      "SevereDeficit": 0.0254
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9572,
+    "probabilities": {
+      "Normal": 0.9572,
+      "MildDeficit": 0.0219,
+      "SevereDeficit": 0.0209
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.4692,
+    "probabilities": {
+      "Normal": 0.4692,
+      "MildDeficit": 0.2241,
+      "SevereDeficit": 0.3067
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.4923,
+    "probabilities": {
+      "Normal": 0.4923,
+      "MildDeficit": 0.2197,
+      "SevereDeficit": 0.2881
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9613,
+    "probabilities": {
+      "Normal": 0.9613,
+      "MildDeficit": 0.0199,
+      "SevereDeficit": 0.0187
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9653,
+    "probabilities": {
+      "Normal": 0.9653,
+      "MildDeficit": 0.0175,
+      "SevereDeficit": 0.0172
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9472,
+    "probabilities": {
+      "Normal": 0.9472,
+      "MildDeficit": 0.0275,
+      "SevereDeficit": 0.0253
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9584,
+    "probabilities": {
+      "Normal": 0.9584,
+      "MildDeficit": 0.0212,
+      "SevereDeficit": 0.0204
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9421,
+    "probabilities": {
+      "Normal": 0.9421,
+      "MildDeficit": 0.0297,
+      "SevereDeficit": 0.0283
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9611,
+    "probabilities": {
+      "Normal": 0.9611,
+      "MildDeficit": 0.0201,
+      "SevereDeficit": 0.0188
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9472,
+    "probabilities": {
+      "Normal": 0.9472,
+      "MildDeficit": 0.0269,
+      "SevereDeficit": 0.0259
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.5287,
+    "probabilities": {
+      "Normal": 0.5287,
+      "MildDeficit": 0.2055,
+      "SevereDeficit": 0.2658
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.5099,
+    "probabilities": {
+      "Normal": 0.5099,
+      "MildDeficit": 0.2139,
+      "SevereDeficit": 0.2761
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.948,
+    "probabilities": {
+      "Normal": 0.948,
+      "MildDeficit": 0.0264,
+      "SevereDeficit": 0.0256
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.5462,
+    "probabilities": {
+      "Normal": 0.5462,
+      "MildDeficit": 0.2018,
+      "SevereDeficit": 0.2519
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9417,
+    "probabilities": {
+      "Normal": 0.9417,
+      "MildDeficit": 0.0293,
+      "SevereDeficit": 0.0289
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6591,
+    "probabilities": {
+      "Normal": 0.6591,
+      "MildDeficit": 0.1735,
+      "SevereDeficit": 0.1674
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6416,
+    "probabilities": {
+      "Normal": 0.6416,
+      "MildDeficit": 0.1832,
+      "SevereDeficit": 0.1752
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5025,
+    "probabilities": {
+      "Normal": 0.5025,
+      "MildDeficit": 0.2214,
+      "SevereDeficit": 0.276
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.952,
+    "probabilities": {
+      "Normal": 0.952,
+      "MildDeficit": 0.0238,
+      "SevereDeficit": 0.0242
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.4873,
+    "probabilities": {
+      "Normal": 0.4873,
+      "MildDeficit": 0.2163,
+      "SevereDeficit": 0.2964
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.505,
+    "probabilities": {
+      "Normal": 0.505,
+      "MildDeficit": 0.2088,
+      "SevereDeficit": 0.2862
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9457,
+    "probabilities": {
+      "Normal": 0.9457,
+      "MildDeficit": 0.0273,
+      "SevereDeficit": 0.0269
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6924,
+    "probabilities": {
+      "Normal": 0.6924,
+      "MildDeficit": 0.1553,
+      "SevereDeficit": 0.1523
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9539,
+    "probabilities": {
+      "Normal": 0.9539,
+      "MildDeficit": 0.0236,
+      "SevereDeficit": 0.0225
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9502,
+    "probabilities": {
+      "Normal": 0.9502,
+      "MildDeficit": 0.0248,
+      "SevereDeficit": 0.0251
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.4619,
+    "probabilities": {
+      "Normal": 0.4619,
+      "MildDeficit": 0.2193,
+      "SevereDeficit": 0.3188
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.4932,
+    "probabilities": {
+      "Normal": 0.4932,
+      "MildDeficit": 0.2144,
+      "SevereDeficit": 0.2924
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6822,
+    "probabilities": {
+      "Normal": 0.6822,
+      "MildDeficit": 0.1612,
+      "SevereDeficit": 0.1567
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.4791,
+    "probabilities": {
+      "Normal": 0.4791,
+      "MildDeficit": 0.2141,
+      "SevereDeficit": 0.3067
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9599,
+    "probabilities": {
+      "Normal": 0.9599,
+      "MildDeficit": 0.0207,
+      "SevereDeficit": 0.0194
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.4959,
+    "probabilities": {
+      "Normal": 0.4959,
+      "MildDeficit": 0.2099,
+      "SevereDeficit": 0.2941
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5422,
+    "probabilities": {
+      "Normal": 0.5422,
+      "MildDeficit": 0.2121,
+      "SevereDeficit": 0.2456
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.5204,
+    "probabilities": {
+      "Normal": 0.5204,
+      "MildDeficit": 0.2063,
+      "SevereDeficit": 0.2732
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5603,
+    "probabilities": {
+      "Normal": 0.5603,
+      "MildDeficit": 0.2053,
+      "SevereDeficit": 0.2344
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9441,
+    "probabilities": {
+      "Normal": 0.9441,
+      "MildDeficit": 0.0286,
+      "SevereDeficit": 0.0273
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9626,
+    "probabilities": {
+      "Normal": 0.9626,
+      "MildDeficit": 0.019,
+      "SevereDeficit": 0.0183
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9574,
+    "probabilities": {
+      "Normal": 0.9574,
+      "MildDeficit": 0.0218,
+      "SevereDeficit": 0.0208
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9523,
+    "probabilities": {
+      "Normal": 0.9523,
+      "MildDeficit": 0.0242,
+      "SevereDeficit": 0.0235
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5465,
+    "probabilities": {
+      "Normal": 0.5465,
+      "MildDeficit": 0.2099,
+      "SevereDeficit": 0.2435
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9452,
+    "probabilities": {
+      "Normal": 0.9452,
+      "MildDeficit": 0.0281,
+      "SevereDeficit": 0.0268
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.4668,
+    "probabilities": {
+      "Normal": 0.4668,
+      "MildDeficit": 0.224,
+      "SevereDeficit": 0.3093
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9473,
+    "probabilities": {
+      "Normal": 0.9473,
+      "MildDeficit": 0.0267,
+      "SevereDeficit": 0.0261
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5975,
+    "probabilities": {
+      "Normal": 0.5975,
+      "MildDeficit": 0.185,
+      "SevereDeficit": 0.2175
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.586,
+    "probabilities": {
+      "Normal": 0.586,
+      "MildDeficit": 0.1946,
+      "SevereDeficit": 0.2194
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9665,
+    "probabilities": {
+      "Normal": 0.9665,
+      "MildDeficit": 0.0171,
+      "SevereDeficit": 0.0164
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9479,
+    "probabilities": {
+      "Normal": 0.9479,
+      "MildDeficit": 0.0264,
+      "SevereDeficit": 0.0258
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9512,
+    "probabilities": {
+      "Normal": 0.9512,
+      "MildDeficit": 0.0249,
+      "SevereDeficit": 0.024
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.501,
+    "probabilities": {
+      "Normal": 0.501,
+      "MildDeficit": 0.2141,
+      "SevereDeficit": 0.2849
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.4624,
+    "probabilities": {
+      "Normal": 0.4624,
+      "MildDeficit": 0.22,
+      "SevereDeficit": 0.3176
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9418,
+    "probabilities": {
+      "Normal": 0.9418,
+      "MildDeficit": 0.029,
+      "SevereDeficit": 0.0292
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6423,
+    "probabilities": {
+      "Normal": 0.6423,
+      "MildDeficit": 0.1819,
+      "SevereDeficit": 0.1758
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9628,
+    "probabilities": {
+      "Normal": 0.9628,
+      "MildDeficit": 0.0188,
+      "SevereDeficit": 0.0184
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.949,
+    "probabilities": {
+      "Normal": 0.949,
+      "MildDeficit": 0.025,
+      "SevereDeficit": 0.0261
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5453,
+    "probabilities": {
+      "Normal": 0.5453,
+      "MildDeficit": 0.2104,
+      "SevereDeficit": 0.2443
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9368,
+    "probabilities": {
+      "Normal": 0.9368,
+      "MildDeficit": 0.0329,
+      "SevereDeficit": 0.0303
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9585,
+    "probabilities": {
+      "Normal": 0.9585,
+      "MildDeficit": 0.0211,
+      "SevereDeficit": 0.0204
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5707,
+    "probabilities": {
+      "Normal": 0.5707,
+      "MildDeficit": 0.2011,
+      "SevereDeficit": 0.2282
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5393,
+    "probabilities": {
+      "Normal": 0.5393,
+      "MildDeficit": 0.2106,
+      "SevereDeficit": 0.2501
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9412,
+    "probabilities": {
+      "Normal": 0.9412,
+      "MildDeficit": 0.03,
+      "SevereDeficit": 0.0287
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.563,
+    "probabilities": {
+      "Normal": 0.563,
+      "MildDeficit": 0.2046,
+      "SevereDeficit": 0.2323
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9569,
+    "probabilities": {
+      "Normal": 0.9569,
+      "MildDeficit": 0.0222,
+      "SevereDeficit": 0.0209
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.455,
+    "probabilities": {
+      "Normal": 0.455,
+      "MildDeficit": 0.2218,
+      "SevereDeficit": 0.3232
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9628,
+    "probabilities": {
+      "Normal": 0.9628,
+      "MildDeficit": 0.0189,
+      "SevereDeficit": 0.0183
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.4666,
+    "probabilities": {
+      "Normal": 0.4666,
+      "MildDeficit": 0.2205,
+      "SevereDeficit": 0.3129
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6211,
+    "probabilities": {
+      "Normal": 0.6211,
+      "MildDeficit": 0.1905,
+      "SevereDeficit": 0.1883
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.944,
+    "probabilities": {
+      "Normal": 0.944,
+      "MildDeficit": 0.0285,
+      "SevereDeficit": 0.0275
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.943,
+    "probabilities": {
+      "Normal": 0.943,
+      "MildDeficit": 0.0287,
+      "SevereDeficit": 0.0283
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9647,
+    "probabilities": {
+      "Normal": 0.9647,
+      "MildDeficit": 0.0181,
+      "SevereDeficit": 0.0172
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6408,
+    "probabilities": {
+      "Normal": 0.6408,
+      "MildDeficit": 0.1842,
+      "SevereDeficit": 0.1751
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.5316,
+    "probabilities": {
+      "Normal": 0.5316,
+      "MildDeficit": 0.2024,
+      "SevereDeficit": 0.266
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5874,
+    "probabilities": {
+      "Normal": 0.5874,
+      "MildDeficit": 0.1959,
+      "SevereDeficit": 0.2168
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9501,
+    "probabilities": {
+      "Normal": 0.9501,
+      "MildDeficit": 0.0256,
+      "SevereDeficit": 0.0243
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9513,
+    "probabilities": {
+      "Normal": 0.9513,
+      "MildDeficit": 0.025,
+      "SevereDeficit": 0.0237
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5184,
+    "probabilities": {
+      "Normal": 0.5184,
+      "MildDeficit": 0.2221,
+      "SevereDeficit": 0.2595
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9466,
+    "probabilities": {
+      "Normal": 0.9466,
+      "MildDeficit": 0.0271,
+      "SevereDeficit": 0.0263
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9483,
+    "probabilities": {
+      "Normal": 0.9483,
+      "MildDeficit": 0.0263,
+      "SevereDeficit": 0.0254
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6397,
+    "probabilities": {
+      "Normal": 0.6397,
+      "MildDeficit": 0.1826,
+      "SevereDeficit": 0.1777
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.4879,
+    "probabilities": {
+      "Normal": 0.4879,
+      "MildDeficit": 0.2173,
+      "SevereDeficit": 0.2948
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.5092,
+    "probabilities": {
+      "Normal": 0.5092,
+      "MildDeficit": 0.2101,
+      "SevereDeficit": 0.2807
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.4872,
+    "probabilities": {
+      "Normal": 0.4872,
+      "MildDeficit": 0.218,
+      "SevereDeficit": 0.2948
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.5307,
+    "probabilities": {
+      "Normal": 0.5307,
+      "MildDeficit": 0.2104,
+      "SevereDeficit": 0.259
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9646,
+    "probabilities": {
+      "Normal": 0.9646,
+      "MildDeficit": 0.0182,
+      "SevereDeficit": 0.0172
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6512,
+    "probabilities": {
+      "Normal": 0.6512,
+      "MildDeficit": 0.1781,
+      "SevereDeficit": 0.1707
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9584,
+    "probabilities": {
+      "Normal": 0.9584,
+      "MildDeficit": 0.0215,
+      "SevereDeficit": 0.0202
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9603,
+    "probabilities": {
+      "Normal": 0.9603,
+      "MildDeficit": 0.0205,
+      "SevereDeficit": 0.0191
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.613,
+    "probabilities": {
+      "Normal": 0.613,
+      "MildDeficit": 0.1834,
+      "SevereDeficit": 0.2036
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9478,
+    "probabilities": {
+      "Normal": 0.9478,
+      "MildDeficit": 0.027,
+      "SevereDeficit": 0.0252
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.5257,
+    "probabilities": {
+      "Normal": 0.5257,
+      "MildDeficit": 0.2095,
+      "SevereDeficit": 0.2648
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5527,
+    "probabilities": {
+      "Normal": 0.5527,
+      "MildDeficit": 0.2085,
+      "SevereDeficit": 0.2388
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.959,
+    "probabilities": {
+      "Normal": 0.959,
+      "MildDeficit": 0.0204,
+      "SevereDeficit": 0.0207
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.4787,
+    "probabilities": {
+      "Normal": 0.4787,
+      "MildDeficit": 0.2184,
+      "SevereDeficit": 0.3029
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.936,
+    "probabilities": {
+      "Normal": 0.936,
+      "MildDeficit": 0.0331,
+      "SevereDeficit": 0.0308
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5395,
+    "probabilities": {
+      "Normal": 0.5395,
+      "MildDeficit": 0.2121,
+      "SevereDeficit": 0.2485
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.672,
+    "probabilities": {
+      "Normal": 0.672,
+      "MildDeficit": 0.1715,
+      "SevereDeficit": 0.1565
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9606,
+    "probabilities": {
+      "Normal": 0.9606,
+      "MildDeficit": 0.0203,
+      "SevereDeficit": 0.0191
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6448,
+    "probabilities": {
+      "Normal": 0.6448,
+      "MildDeficit": 0.178,
+      "SevereDeficit": 0.1772
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9491,
+    "probabilities": {
+      "Normal": 0.9491,
+      "MildDeficit": 0.0256,
+      "SevereDeficit": 0.0252
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9597,
+    "probabilities": {
+      "Normal": 0.9597,
+      "MildDeficit": 0.0203,
+      "SevereDeficit": 0.02
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.4924,
+    "probabilities": {
+      "Normal": 0.4924,
+      "MildDeficit": 0.2182,
+      "SevereDeficit": 0.2894
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9508,
+    "probabilities": {
+      "Normal": 0.9508,
+      "MildDeficit": 0.0251,
+      "SevereDeficit": 0.0242
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5946,
+    "probabilities": {
+      "Normal": 0.5946,
+      "MildDeficit": 0.1928,
+      "SevereDeficit": 0.2127
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9471,
+    "probabilities": {
+      "Normal": 0.9471,
+      "MildDeficit": 0.0269,
+      "SevereDeficit": 0.026
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.644,
+    "probabilities": {
+      "Normal": 0.644,
+      "MildDeficit": 0.1803,
+      "SevereDeficit": 0.1756
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.5906,
+    "probabilities": {
+      "Normal": 0.5906,
+      "MildDeficit": 0.207,
+      "SevereDeficit": 0.2023
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9582,
+    "probabilities": {
+      "Normal": 0.9582,
+      "MildDeficit": 0.0217,
+      "SevereDeficit": 0.02
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.5006,
+    "probabilities": {
+      "Normal": 0.5006,
+      "MildDeficit": 0.2128,
+      "SevereDeficit": 0.2866
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6487,
+    "probabilities": {
+      "Normal": 0.6487,
+      "MildDeficit": 0.1787,
+      "SevereDeficit": 0.1726
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6535,
+    "probabilities": {
+      "Normal": 0.6535,
+      "MildDeficit": 0.1787,
+      "SevereDeficit": 0.1678
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6253,
+    "probabilities": {
+      "Normal": 0.6253,
+      "MildDeficit": 0.1895,
+      "SevereDeficit": 0.1852
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6432,
+    "probabilities": {
+      "Normal": 0.6432,
+      "MildDeficit": 0.1834,
+      "SevereDeficit": 0.1735
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9639,
+    "probabilities": {
+      "Normal": 0.9639,
+      "MildDeficit": 0.0187,
+      "SevereDeficit": 0.0174
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5867,
+    "probabilities": {
+      "Normal": 0.5867,
+      "MildDeficit": 0.1951,
+      "SevereDeficit": 0.2183
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.4527,
+    "probabilities": {
+      "Normal": 0.4527,
+      "MildDeficit": 0.2228,
+      "SevereDeficit": 0.3244
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9471,
+    "probabilities": {
+      "Normal": 0.9471,
+      "MildDeficit": 0.0269,
+      "SevereDeficit": 0.0259
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5488,
+    "probabilities": {
+      "Normal": 0.5488,
+      "MildDeficit": 0.2089,
+      "SevereDeficit": 0.2423
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6846,
+    "probabilities": {
+      "Normal": 0.6846,
+      "MildDeficit": 0.1618,
+      "SevereDeficit": 0.1535
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9456,
+    "probabilities": {
+      "Normal": 0.9456,
+      "MildDeficit": 0.0281,
+      "SevereDeficit": 0.0263
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6889,
+    "probabilities": {
+      "Normal": 0.6889,
+      "MildDeficit": 0.1604,
+      "SevereDeficit": 0.1508
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9478,
+    "probabilities": {
+      "Normal": 0.9478,
+      "MildDeficit": 0.0267,
+      "SevereDeficit": 0.0255
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6405,
+    "probabilities": {
+      "Normal": 0.6405,
+      "MildDeficit": 0.1818,
+      "SevereDeficit": 0.1777
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.957,
+    "probabilities": {
+      "Normal": 0.957,
+      "MildDeficit": 0.0222,
+      "SevereDeficit": 0.0208
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9621,
+    "probabilities": {
+      "Normal": 0.9621,
+      "MildDeficit": 0.0196,
+      "SevereDeficit": 0.0183
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.4681,
+    "probabilities": {
+      "Normal": 0.4681,
+      "MildDeficit": 0.2187,
+      "SevereDeficit": 0.3132
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9513,
+    "probabilities": {
+      "Normal": 0.9513,
+      "MildDeficit": 0.0244,
+      "SevereDeficit": 0.0244
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9607,
+    "probabilities": {
+      "Normal": 0.9607,
+      "MildDeficit": 0.0201,
+      "SevereDeficit": 0.0193
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9603,
+    "probabilities": {
+      "Normal": 0.9603,
+      "MildDeficit": 0.0208,
+      "SevereDeficit": 0.0189
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9597,
+    "probabilities": {
+      "Normal": 0.9597,
+      "MildDeficit": 0.0206,
+      "SevereDeficit": 0.0196
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9598,
+    "probabilities": {
+      "Normal": 0.9598,
+      "MildDeficit": 0.0208,
+      "SevereDeficit": 0.0194
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9569,
+    "probabilities": {
+      "Normal": 0.9569,
+      "MildDeficit": 0.0222,
+      "SevereDeficit": 0.0208
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9374,
+    "probabilities": {
+      "Normal": 0.9374,
+      "MildDeficit": 0.0321,
+      "SevereDeficit": 0.0305
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.6075,
+    "probabilities": {
+      "Normal": 0.6075,
+      "MildDeficit": 0.1868,
+      "SevereDeficit": 0.2057
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5442,
+    "probabilities": {
+      "Normal": 0.5442,
+      "MildDeficit": 0.2096,
+      "SevereDeficit": 0.2461
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9536,
+    "probabilities": {
+      "Normal": 0.9536,
+      "MildDeficit": 0.0233,
+      "SevereDeficit": 0.0231
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.5426,
+    "probabilities": {
+      "Normal": 0.5426,
+      "MildDeficit": 0.201,
+      "SevereDeficit": 0.2564
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9604,
+    "probabilities": {
+      "Normal": 0.9604,
+      "MildDeficit": 0.0199,
+      "SevereDeficit": 0.0197
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.5212,
+    "probabilities": {
+      "Normal": 0.5212,
+      "MildDeficit": 0.2062,
+      "SevereDeficit": 0.2726
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9653,
+    "probabilities": {
+      "Normal": 0.9653,
+      "MildDeficit": 0.0177,
+      "SevereDeficit": 0.017
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9591,
+    "probabilities": {
+      "Normal": 0.9591,
+      "MildDeficit": 0.0207,
+      "SevereDeficit": 0.0203
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9524,
+    "probabilities": {
+      "Normal": 0.9524,
+      "MildDeficit": 0.024,
+      "SevereDeficit": 0.0236
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.5108,
+    "probabilities": {
+      "Normal": 0.5108,
+      "MildDeficit": 0.2135,
+      "SevereDeficit": 0.2757
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9512,
+    "probabilities": {
+      "Normal": 0.9512,
+      "MildDeficit": 0.0246,
+      "SevereDeficit": 0.0242
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5395,
+    "probabilities": {
+      "Normal": 0.5395,
+      "MildDeficit": 0.2126,
+      "SevereDeficit": 0.2479
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5333,
+    "probabilities": {
+      "Normal": 0.5333,
+      "MildDeficit": 0.2162,
+      "SevereDeficit": 0.2505
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.6312,
+    "probabilities": {
+      "Normal": 0.6312,
+      "MildDeficit": 0.1776,
+      "SevereDeficit": 0.1912
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.4957,
+    "probabilities": {
+      "Normal": 0.4957,
+      "MildDeficit": 0.2141,
+      "SevereDeficit": 0.2902
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9634,
+    "probabilities": {
+      "Normal": 0.9634,
+      "MildDeficit": 0.0188,
+      "SevereDeficit": 0.0178
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.623,
+    "probabilities": {
+      "Normal": 0.623,
+      "MildDeficit": 0.1925,
+      "SevereDeficit": 0.1844
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9583,
+    "probabilities": {
+      "Normal": 0.9583,
+      "MildDeficit": 0.0221,
+      "SevereDeficit": 0.0197
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9506,
+    "probabilities": {
+      "Normal": 0.9506,
+      "MildDeficit": 0.025,
+      "SevereDeficit": 0.0244
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6713,
+    "probabilities": {
+      "Normal": 0.6713,
+      "MildDeficit": 0.1691,
+      "SevereDeficit": 0.1595
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5625,
+    "probabilities": {
+      "Normal": 0.5625,
+      "MildDeficit": 0.2043,
+      "SevereDeficit": 0.2332
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.6216,
+    "probabilities": {
+      "Normal": 0.6216,
+      "MildDeficit": 0.1778,
+      "SevereDeficit": 0.2006
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9492,
+    "probabilities": {
+      "Normal": 0.9492,
+      "MildDeficit": 0.026,
+      "SevereDeficit": 0.0249
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.471,
+    "probabilities": {
+      "Normal": 0.471,
+      "MildDeficit": 0.2172,
+      "SevereDeficit": 0.3117
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.4761,
+    "probabilities": {
+      "Normal": 0.4761,
+      "MildDeficit": 0.2184,
+      "SevereDeficit": 0.3055
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6368,
+    "probabilities": {
+      "Normal": 0.6368,
+      "MildDeficit": 0.1828,
+      "SevereDeficit": 0.1804
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9584,
+    "probabilities": {
+      "Normal": 0.9584,
+      "MildDeficit": 0.021,
+      "SevereDeficit": 0.0206
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9572,
+    "probabilities": {
+      "Normal": 0.9572,
+      "MildDeficit": 0.0221,
+      "SevereDeficit": 0.0207
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.4705,
+    "probabilities": {
+      "Normal": 0.4705,
+      "MildDeficit": 0.2223,
+      "SevereDeficit": 0.3072
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9482,
+    "probabilities": {
+      "Normal": 0.9482,
+      "MildDeficit": 0.0261,
+      "SevereDeficit": 0.0258
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9619,
+    "probabilities": {
+      "Normal": 0.9619,
+      "MildDeficit": 0.0198,
+      "SevereDeficit": 0.0184
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.5369,
+    "probabilities": {
+      "Normal": 0.5369,
+      "MildDeficit": 0.2037,
+      "SevereDeficit": 0.2593
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5996,
+    "probabilities": {
+      "Normal": 0.5996,
+      "MildDeficit": 0.1917,
+      "SevereDeficit": 0.2086
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6535,
+    "probabilities": {
+      "Normal": 0.6535,
+      "MildDeficit": 0.1782,
+      "SevereDeficit": 0.1684
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.947,
+    "probabilities": {
+      "Normal": 0.947,
+      "MildDeficit": 0.0268,
+      "SevereDeficit": 0.0263
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6782,
+    "probabilities": {
+      "Normal": 0.6782,
+      "MildDeficit": 0.1649,
+      "SevereDeficit": 0.1569
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5605,
+    "probabilities": {
+      "Normal": 0.5605,
+      "MildDeficit": 0.204,
+      "SevereDeficit": 0.2355
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9507,
+    "probabilities": {
+      "Normal": 0.9507,
+      "MildDeficit": 0.0251,
+      "SevereDeficit": 0.0242
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6431,
+    "probabilities": {
+      "Normal": 0.6431,
+      "MildDeficit": 0.1814,
+      "SevereDeficit": 0.1755
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5672,
+    "probabilities": {
+      "Normal": 0.5672,
+      "MildDeficit": 0.2035,
+      "SevereDeficit": 0.2293
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5912,
+    "probabilities": {
+      "Normal": 0.5912,
+      "MildDeficit": 0.1927,
+      "SevereDeficit": 0.2161
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6778,
+    "probabilities": {
+      "Normal": 0.6778,
+      "MildDeficit": 0.1641,
+      "SevereDeficit": 0.1581
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9473,
+    "probabilities": {
+      "Normal": 0.9473,
+      "MildDeficit": 0.0268,
+      "SevereDeficit": 0.0259
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5511,
+    "probabilities": {
+      "Normal": 0.5511,
+      "MildDeficit": 0.2083,
+      "SevereDeficit": 0.2406
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9512,
+    "probabilities": {
+      "Normal": 0.9512,
+      "MildDeficit": 0.0249,
+      "SevereDeficit": 0.0239
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9565,
+    "probabilities": {
+      "Normal": 0.9565,
+      "MildDeficit": 0.0217,
+      "SevereDeficit": 0.0217
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9486,
+    "probabilities": {
+      "Normal": 0.9486,
+      "MildDeficit": 0.0267,
+      "SevereDeficit": 0.0248
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6542,
+    "probabilities": {
+      "Normal": 0.6542,
+      "MildDeficit": 0.1766,
+      "SevereDeficit": 0.1692
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9627,
+    "probabilities": {
+      "Normal": 0.9627,
+      "MildDeficit": 0.0187,
+      "SevereDeficit": 0.0186
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.6051,
+    "probabilities": {
+      "Normal": 0.6051,
+      "MildDeficit": 0.1865,
+      "SevereDeficit": 0.2084
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9649,
+    "probabilities": {
+      "Normal": 0.9649,
+      "MildDeficit": 0.0177,
+      "SevereDeficit": 0.0174
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.5328,
+    "probabilities": {
+      "Normal": 0.5328,
+      "MildDeficit": 0.2015,
+      "SevereDeficit": 0.2657
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.597,
+    "probabilities": {
+      "Normal": 0.597,
+      "MildDeficit": 0.188,
+      "SevereDeficit": 0.2151
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9563,
+    "probabilities": {
+      "Normal": 0.9563,
+      "MildDeficit": 0.0222,
+      "SevereDeficit": 0.0215
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9506,
+    "probabilities": {
+      "Normal": 0.9506,
+      "MildDeficit": 0.025,
+      "SevereDeficit": 0.0243
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9588,
+    "probabilities": {
+      "Normal": 0.9588,
+      "MildDeficit": 0.0211,
+      "SevereDeficit": 0.0201
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6359,
+    "probabilities": {
+      "Normal": 0.6359,
+      "MildDeficit": 0.1873,
+      "SevereDeficit": 0.1768
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9659,
+    "probabilities": {
+      "Normal": 0.9659,
+      "MildDeficit": 0.0175,
+      "SevereDeficit": 0.0166
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6188,
+    "probabilities": {
+      "Normal": 0.6188,
+      "MildDeficit": 0.1941,
+      "SevereDeficit": 0.1871
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.4519,
+    "probabilities": {
+      "Normal": 0.4519,
+      "MildDeficit": 0.2235,
+      "SevereDeficit": 0.3245
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9433,
+    "probabilities": {
+      "Normal": 0.9433,
+      "MildDeficit": 0.0287,
+      "SevereDeficit": 0.028
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.4612,
+    "probabilities": {
+      "Normal": 0.4612,
+      "MildDeficit": 0.2185,
+      "SevereDeficit": 0.3203
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9501,
+    "probabilities": {
+      "Normal": 0.9501,
+      "MildDeficit": 0.025,
+      "SevereDeficit": 0.0249
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5571,
+    "probabilities": {
+      "Normal": 0.5571,
+      "MildDeficit": 0.2076,
+      "SevereDeficit": 0.2353
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6352,
+    "probabilities": {
+      "Normal": 0.6352,
+      "MildDeficit": 0.1851,
+      "SevereDeficit": 0.1797
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6323,
+    "probabilities": {
+      "Normal": 0.6323,
+      "MildDeficit": 0.1863,
+      "SevereDeficit": 0.1815
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.575,
+    "probabilities": {
+      "Normal": 0.575,
+      "MildDeficit": 0.2018,
+      "SevereDeficit": 0.2232
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.941,
+    "probabilities": {
+      "Normal": 0.941,
+      "MildDeficit": 0.0301,
+      "SevereDeficit": 0.0289
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6621,
+    "probabilities": {
+      "Normal": 0.6621,
+      "MildDeficit": 0.1705,
+      "SevereDeficit": 0.1673
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.4847,
+    "probabilities": {
+      "Normal": 0.4847,
+      "MildDeficit": 0.2147,
+      "SevereDeficit": 0.3006
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9516,
+    "probabilities": {
+      "Normal": 0.9516,
+      "MildDeficit": 0.0247,
+      "SevereDeficit": 0.0237
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9443,
+    "probabilities": {
+      "Normal": 0.9443,
+      "MildDeficit": 0.0279,
+      "SevereDeficit": 0.0279
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.4651,
+    "probabilities": {
+      "Normal": 0.4651,
+      "MildDeficit": 0.2269,
+      "SevereDeficit": 0.308
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9642,
+    "probabilities": {
+      "Normal": 0.9642,
+      "MildDeficit": 0.0183,
+      "SevereDeficit": 0.0174
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5921,
+    "probabilities": {
+      "Normal": 0.5921,
+      "MildDeficit": 0.1927,
+      "SevereDeficit": 0.2152
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.4982,
+    "probabilities": {
+      "Normal": 0.4982,
+      "MildDeficit": 0.2172,
+      "SevereDeficit": 0.2846
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9446,
+    "probabilities": {
+      "Normal": 0.9446,
+      "MildDeficit": 0.0282,
+      "SevereDeficit": 0.0272
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.5046,
+    "probabilities": {
+      "Normal": 0.5046,
+      "MildDeficit": 0.2135,
+      "SevereDeficit": 0.2819
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.4621,
+    "probabilities": {
+      "Normal": 0.4621,
+      "MildDeficit": 0.2236,
+      "SevereDeficit": 0.3143
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.4846,
+    "probabilities": {
+      "Normal": 0.4846,
+      "MildDeficit": 0.213,
+      "SevereDeficit": 0.3024
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5627,
+    "probabilities": {
+      "Normal": 0.5627,
+      "MildDeficit": 0.2043,
+      "SevereDeficit": 0.2331
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6173,
+    "probabilities": {
+      "Normal": 0.6173,
+      "MildDeficit": 0.1918,
+      "SevereDeficit": 0.1909
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9407,
+    "probabilities": {
+      "Normal": 0.9407,
+      "MildDeficit": 0.0303,
+      "SevereDeficit": 0.0289
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9528,
+    "probabilities": {
+      "Normal": 0.9528,
+      "MildDeficit": 0.0238,
+      "SevereDeficit": 0.0233
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6285,
+    "probabilities": {
+      "Normal": 0.6285,
+      "MildDeficit": 0.1886,
+      "SevereDeficit": 0.1829
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9526,
+    "probabilities": {
+      "Normal": 0.9526,
+      "MildDeficit": 0.0246,
+      "SevereDeficit": 0.0228
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.949,
+    "probabilities": {
+      "Normal": 0.949,
+      "MildDeficit": 0.0258,
+      "SevereDeficit": 0.0252
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5353,
+    "probabilities": {
+      "Normal": 0.5353,
+      "MildDeficit": 0.2141,
+      "SevereDeficit": 0.2506
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9578,
+    "probabilities": {
+      "Normal": 0.9578,
+      "MildDeficit": 0.0217,
+      "SevereDeficit": 0.0205
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.4802,
+    "probabilities": {
+      "Normal": 0.4802,
+      "MildDeficit": 0.2176,
+      "SevereDeficit": 0.3022
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5666,
+    "probabilities": {
+      "Normal": 0.5666,
+      "MildDeficit": 0.1981,
+      "SevereDeficit": 0.2354
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5495,
+    "probabilities": {
+      "Normal": 0.5495,
+      "MildDeficit": 0.2026,
+      "SevereDeficit": 0.2479
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5652,
+    "probabilities": {
+      "Normal": 0.5652,
+      "MildDeficit": 0.2009,
+      "SevereDeficit": 0.234
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9506,
+    "probabilities": {
+      "Normal": 0.9506,
+      "MildDeficit": 0.0256,
+      "SevereDeficit": 0.0238
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5665,
+    "probabilities": {
+      "Normal": 0.5665,
+      "MildDeficit": 0.2031,
+      "SevereDeficit": 0.2304
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.956,
+    "probabilities": {
+      "Normal": 0.956,
+      "MildDeficit": 0.0226,
+      "SevereDeficit": 0.0214
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9527,
+    "probabilities": {
+      "Normal": 0.9527,
+      "MildDeficit": 0.0237,
+      "SevereDeficit": 0.0236
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9571,
+    "probabilities": {
+      "Normal": 0.9571,
+      "MildDeficit": 0.0217,
+      "SevereDeficit": 0.0212
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.5223,
+    "probabilities": {
+      "Normal": 0.5223,
+      "MildDeficit": 0.2069,
+      "SevereDeficit": 0.2708
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.4953,
+    "probabilities": {
+      "Normal": 0.4953,
+      "MildDeficit": 0.2116,
+      "SevereDeficit": 0.2931
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9526,
+    "probabilities": {
+      "Normal": 0.9526,
+      "MildDeficit": 0.0243,
+      "SevereDeficit": 0.0232
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.58,
+    "probabilities": {
+      "Normal": 0.58,
+      "MildDeficit": 0.2004,
+      "SevereDeficit": 0.2196
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5835,
+    "probabilities": {
+      "Normal": 0.5835,
+      "MildDeficit": 0.1973,
+      "SevereDeficit": 0.2191
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9504,
+    "probabilities": {
+      "Normal": 0.9504,
+      "MildDeficit": 0.0251,
+      "SevereDeficit": 0.0245
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5691,
+    "probabilities": {
+      "Normal": 0.5691,
+      "MildDeficit": 0.1994,
+      "SevereDeficit": 0.2315
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5568,
+    "probabilities": {
+      "Normal": 0.5568,
+      "MildDeficit": 0.2068,
+      "SevereDeficit": 0.2364
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9613,
+    "probabilities": {
+      "Normal": 0.9613,
+      "MildDeficit": 0.0194,
+      "SevereDeficit": 0.0193
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9585,
+    "probabilities": {
+      "Normal": 0.9585,
+      "MildDeficit": 0.021,
+      "SevereDeficit": 0.0205
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9525,
+    "probabilities": {
+      "Normal": 0.9525,
+      "MildDeficit": 0.0242,
+      "SevereDeficit": 0.0233
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6492,
+    "probabilities": {
+      "Normal": 0.6492,
+      "MildDeficit": 0.18,
+      "SevereDeficit": 0.1709
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9613,
+    "probabilities": {
+      "Normal": 0.9613,
+      "MildDeficit": 0.0195,
+      "SevereDeficit": 0.0192
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9518,
+    "probabilities": {
+      "Normal": 0.9518,
+      "MildDeficit": 0.0247,
+      "SevereDeficit": 0.0235
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9501,
+    "probabilities": {
+      "Normal": 0.9501,
+      "MildDeficit": 0.0255,
+      "SevereDeficit": 0.0244
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9487,
+    "probabilities": {
+      "Normal": 0.9487,
+      "MildDeficit": 0.0265,
+      "SevereDeficit": 0.0247
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5007,
+    "probabilities": {
+      "Normal": 0.5007,
+      "MildDeficit": 0.22,
+      "SevereDeficit": 0.2793
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9551,
+    "probabilities": {
+      "Normal": 0.9551,
+      "MildDeficit": 0.0229,
+      "SevereDeficit": 0.0221
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.569,
+    "probabilities": {
+      "Normal": 0.569,
+      "MildDeficit": 0.2067,
+      "SevereDeficit": 0.2243
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9598,
+    "probabilities": {
+      "Normal": 0.9598,
+      "MildDeficit": 0.0206,
+      "SevereDeficit": 0.0197
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.5137,
+    "probabilities": {
+      "Normal": 0.5137,
+      "MildDeficit": 0.2145,
+      "SevereDeficit": 0.2719
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9513,
+    "probabilities": {
+      "Normal": 0.9513,
+      "MildDeficit": 0.0246,
+      "SevereDeficit": 0.024
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5692,
+    "probabilities": {
+      "Normal": 0.5692,
+      "MildDeficit": 0.1996,
+      "SevereDeficit": 0.2312
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9561,
+    "probabilities": {
+      "Normal": 0.9561,
+      "MildDeficit": 0.0224,
+      "SevereDeficit": 0.0215
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9637,
+    "probabilities": {
+      "Normal": 0.9637,
+      "MildDeficit": 0.0185,
+      "SevereDeficit": 0.0177
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9484,
+    "probabilities": {
+      "Normal": 0.9484,
+      "MildDeficit": 0.0265,
+      "SevereDeficit": 0.0252
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9649,
+    "probabilities": {
+      "Normal": 0.9649,
+      "MildDeficit": 0.018,
+      "SevereDeficit": 0.017
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6346,
+    "probabilities": {
+      "Normal": 0.6346,
+      "MildDeficit": 0.1821,
+      "SevereDeficit": 0.1833
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9544,
+    "probabilities": {
+      "Normal": 0.9544,
+      "MildDeficit": 0.0234,
+      "SevereDeficit": 0.0222
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6248,
+    "probabilities": {
+      "Normal": 0.6248,
+      "MildDeficit": 0.1898,
+      "SevereDeficit": 0.1854
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.4899,
+    "probabilities": {
+      "Normal": 0.4899,
+      "MildDeficit": 0.218,
+      "SevereDeficit": 0.292
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6507,
+    "probabilities": {
+      "Normal": 0.6507,
+      "MildDeficit": 0.1795,
+      "SevereDeficit": 0.1698
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5407,
+    "probabilities": {
+      "Normal": 0.5407,
+      "MildDeficit": 0.2146,
+      "SevereDeficit": 0.2447
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9533,
+    "probabilities": {
+      "Normal": 0.9533,
+      "MildDeficit": 0.0242,
+      "SevereDeficit": 0.0225
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9625,
+    "probabilities": {
+      "Normal": 0.9625,
+      "MildDeficit": 0.0192,
+      "SevereDeficit": 0.0183
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6331,
+    "probabilities": {
+      "Normal": 0.6331,
+      "MildDeficit": 0.1868,
+      "SevereDeficit": 0.1801
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.5472,
+    "probabilities": {
+      "Normal": 0.5472,
+      "MildDeficit": 0.1988,
+      "SevereDeficit": 0.254
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9526,
+    "probabilities": {
+      "Normal": 0.9526,
+      "MildDeficit": 0.0236,
+      "SevereDeficit": 0.0238
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.948,
+    "probabilities": {
+      "Normal": 0.948,
+      "MildDeficit": 0.0262,
+      "SevereDeficit": 0.0258
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5765,
+    "probabilities": {
+      "Normal": 0.5765,
+      "MildDeficit": 0.1963,
+      "SevereDeficit": 0.2272
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9604,
+    "probabilities": {
+      "Normal": 0.9604,
+      "MildDeficit": 0.0205,
+      "SevereDeficit": 0.0191
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5681,
+    "probabilities": {
+      "Normal": 0.5681,
+      "MildDeficit": 0.1982,
+      "SevereDeficit": 0.2337
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.4844,
+    "probabilities": {
+      "Normal": 0.4844,
+      "MildDeficit": 0.2235,
+      "SevereDeficit": 0.2921
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9481,
+    "probabilities": {
+      "Normal": 0.9481,
+      "MildDeficit": 0.0267,
+      "SevereDeficit": 0.0252
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9454,
+    "probabilities": {
+      "Normal": 0.9454,
+      "MildDeficit": 0.0279,
+      "SevereDeficit": 0.0267
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9534,
+    "probabilities": {
+      "Normal": 0.9534,
+      "MildDeficit": 0.0233,
+      "SevereDeficit": 0.0233
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9501,
+    "probabilities": {
+      "Normal": 0.9501,
+      "MildDeficit": 0.0252,
+      "SevereDeficit": 0.0246
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5707,
+    "probabilities": {
+      "Normal": 0.5707,
+      "MildDeficit": 0.1998,
+      "SevereDeficit": 0.2295
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9515,
+    "probabilities": {
+      "Normal": 0.9515,
+      "MildDeficit": 0.0245,
+      "SevereDeficit": 0.024
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9557,
+    "probabilities": {
+      "Normal": 0.9557,
+      "MildDeficit": 0.0222,
+      "SevereDeficit": 0.022
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9511,
+    "probabilities": {
+      "Normal": 0.9511,
+      "MildDeficit": 0.0249,
+      "SevereDeficit": 0.0241
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9426,
+    "probabilities": {
+      "Normal": 0.9426,
+      "MildDeficit": 0.0291,
+      "SevereDeficit": 0.0283
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9565,
+    "probabilities": {
+      "Normal": 0.9565,
+      "MildDeficit": 0.0218,
+      "SevereDeficit": 0.0217
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.4857,
+    "probabilities": {
+      "Normal": 0.4857,
+      "MildDeficit": 0.2131,
+      "SevereDeficit": 0.3012
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6445,
+    "probabilities": {
+      "Normal": 0.6445,
+      "MildDeficit": 0.1814,
+      "SevereDeficit": 0.1741
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.653,
+    "probabilities": {
+      "Normal": 0.653,
+      "MildDeficit": 0.1776,
+      "SevereDeficit": 0.1694
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9473,
+    "probabilities": {
+      "Normal": 0.9473,
+      "MildDeficit": 0.0267,
+      "SevereDeficit": 0.0261
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.7081,
+    "probabilities": {
+      "Normal": 0.7081,
+      "MildDeficit": 0.152,
+      "SevereDeficit": 0.1398
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9447,
+    "probabilities": {
+      "Normal": 0.9447,
+      "MildDeficit": 0.0281,
+      "SevereDeficit": 0.0272
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6814,
+    "probabilities": {
+      "Normal": 0.6814,
+      "MildDeficit": 0.1643,
+      "SevereDeficit": 0.1543
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9613,
+    "probabilities": {
+      "Normal": 0.9613,
+      "MildDeficit": 0.0201,
+      "SevereDeficit": 0.0187
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5967,
+    "probabilities": {
+      "Normal": 0.5967,
+      "MildDeficit": 0.1909,
+      "SevereDeficit": 0.2124
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9591,
+    "probabilities": {
+      "Normal": 0.9591,
+      "MildDeficit": 0.0209,
+      "SevereDeficit": 0.0199
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6419,
+    "probabilities": {
+      "Normal": 0.6419,
+      "MildDeficit": 0.1827,
+      "SevereDeficit": 0.1754
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5792,
+    "probabilities": {
+      "Normal": 0.5792,
+      "MildDeficit": 0.2017,
+      "SevereDeficit": 0.2191
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9627,
+    "probabilities": {
+      "Normal": 0.9627,
+      "MildDeficit": 0.0194,
+      "SevereDeficit": 0.0179
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5437,
+    "probabilities": {
+      "Normal": 0.5437,
+      "MildDeficit": 0.2133,
+      "SevereDeficit": 0.243
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9643,
+    "probabilities": {
+      "Normal": 0.9643,
+      "MildDeficit": 0.0181,
+      "SevereDeficit": 0.0177
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5423,
+    "probabilities": {
+      "Normal": 0.5423,
+      "MildDeficit": 0.2101,
+      "SevereDeficit": 0.2476
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5516,
+    "probabilities": {
+      "Normal": 0.5516,
+      "MildDeficit": 0.2085,
+      "SevereDeficit": 0.2399
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.4964,
+    "probabilities": {
+      "Normal": 0.4964,
+      "MildDeficit": 0.2172,
+      "SevereDeficit": 0.2864
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5466,
+    "probabilities": {
+      "Normal": 0.5466,
+      "MildDeficit": 0.2049,
+      "SevereDeficit": 0.2485
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6682,
+    "probabilities": {
+      "Normal": 0.6682,
+      "MildDeficit": 0.1627,
+      "SevereDeficit": 0.1691
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6273,
+    "probabilities": {
+      "Normal": 0.6273,
+      "MildDeficit": 0.1868,
+      "SevereDeficit": 0.1859
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.4849,
+    "probabilities": {
+      "Normal": 0.4849,
+      "MildDeficit": 0.221,
+      "SevereDeficit": 0.2941
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9386,
+    "probabilities": {
+      "Normal": 0.9386,
+      "MildDeficit": 0.0317,
+      "SevereDeficit": 0.0297
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9464,
+    "probabilities": {
+      "Normal": 0.9464,
+      "MildDeficit": 0.0274,
+      "SevereDeficit": 0.0262
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9533,
+    "probabilities": {
+      "Normal": 0.9533,
+      "MildDeficit": 0.0235,
+      "SevereDeficit": 0.0233
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9413,
+    "probabilities": {
+      "Normal": 0.9413,
+      "MildDeficit": 0.0301,
+      "SevereDeficit": 0.0286
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9465,
+    "probabilities": {
+      "Normal": 0.9465,
+      "MildDeficit": 0.0273,
+      "SevereDeficit": 0.0262
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5896,
+    "probabilities": {
+      "Normal": 0.5896,
+      "MildDeficit": 0.1934,
+      "SevereDeficit": 0.217
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9573,
+    "probabilities": {
+      "Normal": 0.9573,
+      "MildDeficit": 0.0213,
+      "SevereDeficit": 0.0214
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9334,
+    "probabilities": {
+      "Normal": 0.9334,
+      "MildDeficit": 0.0344,
+      "SevereDeficit": 0.0322
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9474,
+    "probabilities": {
+      "Normal": 0.9474,
+      "MildDeficit": 0.0266,
+      "SevereDeficit": 0.026
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9484,
+    "probabilities": {
+      "Normal": 0.9484,
+      "MildDeficit": 0.026,
+      "SevereDeficit": 0.0257
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9474,
+    "probabilities": {
+      "Normal": 0.9474,
+      "MildDeficit": 0.0263,
+      "SevereDeficit": 0.0263
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.4382,
+    "probabilities": {
+      "Normal": 0.4382,
+      "MildDeficit": 0.2239,
+      "SevereDeficit": 0.3379
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.946,
+    "probabilities": {
+      "Normal": 0.946,
+      "MildDeficit": 0.0278,
+      "SevereDeficit": 0.0263
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5625,
+    "probabilities": {
+      "Normal": 0.5625,
+      "MildDeficit": 0.2064,
+      "SevereDeficit": 0.2312
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.5146,
+    "probabilities": {
+      "Normal": 0.5146,
+      "MildDeficit": 0.2129,
+      "SevereDeficit": 0.2725
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.4824,
+    "probabilities": {
+      "Normal": 0.4824,
+      "MildDeficit": 0.2135,
+      "SevereDeficit": 0.3041
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.674,
+    "probabilities": {
+      "Normal": 0.674,
+      "MildDeficit": 0.1674,
+      "SevereDeficit": 0.1585
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6454,
+    "probabilities": {
+      "Normal": 0.6454,
+      "MildDeficit": 0.1792,
+      "SevereDeficit": 0.1755
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.946,
+    "probabilities": {
+      "Normal": 0.946,
+      "MildDeficit": 0.0268,
+      "SevereDeficit": 0.0272
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5733,
+    "probabilities": {
+      "Normal": 0.5733,
+      "MildDeficit": 0.198,
+      "SevereDeficit": 0.2287
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.95,
+    "probabilities": {
+      "Normal": 0.95,
+      "MildDeficit": 0.0254,
+      "SevereDeficit": 0.0246
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6545,
+    "probabilities": {
+      "Normal": 0.6545,
+      "MildDeficit": 0.1742,
+      "SevereDeficit": 0.1713
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9586,
+    "probabilities": {
+      "Normal": 0.9586,
+      "MildDeficit": 0.0208,
+      "SevereDeficit": 0.0206
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6363,
+    "probabilities": {
+      "Normal": 0.6363,
+      "MildDeficit": 0.1843,
+      "SevereDeficit": 0.1795
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9392,
+    "probabilities": {
+      "Normal": 0.9392,
+      "MildDeficit": 0.0308,
+      "SevereDeficit": 0.03
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.95,
+    "probabilities": {
+      "Normal": 0.95,
+      "MildDeficit": 0.0255,
+      "SevereDeficit": 0.0244
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9413,
+    "probabilities": {
+      "Normal": 0.9413,
+      "MildDeficit": 0.0302,
+      "SevereDeficit": 0.0285
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9589,
+    "probabilities": {
+      "Normal": 0.9589,
+      "MildDeficit": 0.0212,
+      "SevereDeficit": 0.0199
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.94,
+    "probabilities": {
+      "Normal": 0.94,
+      "MildDeficit": 0.03,
+      "SevereDeficit": 0.03
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.5232,
+    "probabilities": {
+      "Normal": 0.5232,
+      "MildDeficit": 0.2085,
+      "SevereDeficit": 0.2683
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9625,
+    "probabilities": {
+      "Normal": 0.9625,
+      "MildDeficit": 0.019,
+      "SevereDeficit": 0.0186
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9516,
+    "probabilities": {
+      "Normal": 0.9516,
+      "MildDeficit": 0.0245,
+      "SevereDeficit": 0.0239
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.4822,
+    "probabilities": {
+      "Normal": 0.4822,
+      "MildDeficit": 0.2171,
+      "SevereDeficit": 0.3007
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5576,
+    "probabilities": {
+      "Normal": 0.5576,
+      "MildDeficit": 0.2046,
+      "SevereDeficit": 0.2378
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9562,
+    "probabilities": {
+      "Normal": 0.9562,
+      "MildDeficit": 0.0226,
+      "SevereDeficit": 0.0212
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6451,
+    "probabilities": {
+      "Normal": 0.6451,
+      "MildDeficit": 0.18,
+      "SevereDeficit": 0.1749
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5877,
+    "probabilities": {
+      "Normal": 0.5877,
+      "MildDeficit": 0.1957,
+      "SevereDeficit": 0.2166
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.4623,
+    "probabilities": {
+      "Normal": 0.4623,
+      "MildDeficit": 0.2247,
+      "SevereDeficit": 0.313
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.5132,
+    "probabilities": {
+      "Normal": 0.5132,
+      "MildDeficit": 0.2087,
+      "SevereDeficit": 0.2781
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5494,
+    "probabilities": {
+      "Normal": 0.5494,
+      "MildDeficit": 0.2114,
+      "SevereDeficit": 0.2391
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9451,
+    "probabilities": {
+      "Normal": 0.9451,
+      "MildDeficit": 0.0283,
+      "SevereDeficit": 0.0266
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.68,
+    "probabilities": {
+      "Normal": 0.68,
+      "MildDeficit": 0.1642,
+      "SevereDeficit": 0.1558
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.5228,
+    "probabilities": {
+      "Normal": 0.5228,
+      "MildDeficit": 0.2076,
+      "SevereDeficit": 0.2696
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.5309,
+    "probabilities": {
+      "Normal": 0.5309,
+      "MildDeficit": 0.2027,
+      "SevereDeficit": 0.2665
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6473,
+    "probabilities": {
+      "Normal": 0.6473,
+      "MildDeficit": 0.1797,
+      "SevereDeficit": 0.1731
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9575,
+    "probabilities": {
+      "Normal": 0.9575,
+      "MildDeficit": 0.022,
+      "SevereDeficit": 0.0205
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.4954,
+    "probabilities": {
+      "Normal": 0.4954,
+      "MildDeficit": 0.2126,
+      "SevereDeficit": 0.292
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9423,
+    "probabilities": {
+      "Normal": 0.9423,
+      "MildDeficit": 0.0295,
+      "SevereDeficit": 0.0282
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9485,
+    "probabilities": {
+      "Normal": 0.9485,
+      "MildDeficit": 0.0259,
+      "SevereDeficit": 0.0256
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9538,
+    "probabilities": {
+      "Normal": 0.9538,
+      "MildDeficit": 0.0238,
+      "SevereDeficit": 0.0224
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.4826,
+    "probabilities": {
+      "Normal": 0.4826,
+      "MildDeficit": 0.225,
+      "SevereDeficit": 0.2924
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.4272,
+    "probabilities": {
+      "Normal": 0.4272,
+      "MildDeficit": 0.226,
+      "SevereDeficit": 0.3468
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9528,
+    "probabilities": {
+      "Normal": 0.9528,
+      "MildDeficit": 0.0236,
+      "SevereDeficit": 0.0236
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.961,
+    "probabilities": {
+      "Normal": 0.961,
+      "MildDeficit": 0.0203,
+      "SevereDeficit": 0.0188
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503",
+    "prediction": "Normal",
+    "confidence": 0.9551,
+    "probabilities": {
+      "Normal": 0.9551,
+      "MildDeficit": 0.023,
+      "SevereDeficit": 0.0219
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6245,
+    "probabilities": {
+      "Normal": 0.6245,
+      "MildDeficit": 0.1912,
+      "SevereDeficit": 0.1843
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6154,
+    "probabilities": {
+      "Normal": 0.6154,
+      "MildDeficit": 0.1938,
+      "SevereDeficit": 0.1907
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7",
+    "prediction": "Normal",
+    "confidence": 0.9595,
+    "probabilities": {
+      "Normal": 0.9595,
+      "MildDeficit": 0.0207,
+      "SevereDeficit": 0.0198
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17_severe",
+    "prediction": "Normal",
+    "confidence": 0.5083,
+    "probabilities": {
+      "Normal": 0.5083,
+      "MildDeficit": 0.2216,
+      "SevereDeficit": 0.2701
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9594,
+    "probabilities": {
+      "Normal": 0.9594,
+      "MildDeficit": 0.0203,
+      "SevereDeficit": 0.0203
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.4992,
+    "probabilities": {
+      "Normal": 0.4992,
+      "MildDeficit": 0.2151,
+      "SevereDeficit": 0.2857
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.949,
+    "probabilities": {
+      "Normal": 0.949,
+      "MildDeficit": 0.0254,
+      "SevereDeficit": 0.0256
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.522,
+    "probabilities": {
+      "Normal": 0.522,
+      "MildDeficit": 0.209,
+      "SevereDeficit": 0.269
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "b478b1ca-2361-4c25-b0b1-c511fd80b503_severe",
+    "prediction": "Normal",
+    "confidence": 0.5238,
+    "probabilities": {
+      "Normal": 0.5238,
+      "MildDeficit": 0.2105,
+      "SevereDeficit": 0.2657
+    },
+    "trueLabel": "Severe Deficit"
+  },
+  {
+    "sessionId": "0c41c628-b50f-4917-891a-bc430d08fa17",
+    "prediction": "Normal",
+    "confidence": 0.9534,
+    "probabilities": {
+      "Normal": 0.9534,
+      "MildDeficit": 0.0236,
+      "SevereDeficit": 0.023
+    },
+    "trueLabel": "Normal"
+  },
+  {
+    "sessionId": "65a9fe33-361e-47a5-a7c5-a492930a31e7_severe",
+    "prediction": "Normal",
+    "confidence": 0.6199,
+    "probabilities": {
+      "Normal": 0.6199,
+      "MildDeficit": 0.1927,
+      "SevereDeficit": 0.1875
+    },
+    "trueLabel": "Severe Deficit"
+  }
+]

@@ -11,7 +11,6 @@ namespace OphthalSuite.Core.Database
         public string id;           // UUID (sessionId)
         public string patientId;
         public string eye;          // "OD" / "OS"
-        public int age;
         public string deviceId;
         public string startedAt;    // ISO-8601 UTC
         public string endedAt;      // ISO-8601 UTC (null while running)

@@ -62,6 +62,7 @@ namespace OphthalSuite.Core
         public float  falseNegRate;
         public float  fixationLossRate;
         public string reliabilityCategory;   // "Acceptable" / "Questionable" / "Unreliable"
+        public string category;              // "Normal" / "Mild" / "Severe"
 
         // --- Full JSON result from the test (test-specific, stored as string) ---
         public string fullResultJson;

@@ -175,7 +175,6 @@ namespace OphthalSuite.Core.Database
                     id = ctx.sessionId,
                     patientId = ctx.patientId ?? "",
                     eye = ctx.eye ?? "",
-                    age = ctx.age,
                     deviceId = ctx.deviceId ?? "",
                     startedAt = DateTime.UtcNow.ToString("o"),
                     endedAt = "",
@@ -241,9 +240,8 @@ namespace OphthalSuite.Core.Database
 
                 _activeSession.trials.Add(record);
 
-                // Flush to disk every 10 trials (balance performance vs safety)
-                if (_activeSession.trials.Count % 10 == 0)
-                    SaveSessionData(_activeSessionId, _activeSession);
+                // Flush every trial: clinical data is small and should survive app/device interruption.
+                SaveSessionData(_activeSessionId, _activeSession);
             }
             catch (Exception ex)
             {
@@ -390,7 +388,6 @@ namespace OphthalSuite.Core.Database
                 sb.Append($"\"sessionId\":\"{Escape(data.session.id)}\",");
                 sb.Append($"\"patientId\":\"{Escape(data.session.patientId)}\",");
                 sb.Append($"\"eye\":\"{Escape(data.session.eye)}\",");
-                sb.Append($"\"age\":{data.session.age},");
                 sb.Append($"\"status\":\"{Escape(data.session.status)}\",");
                 sb.Append($"\"durationSec\":{data.session.durationSec:F2},");
                 sb.Append($"\"startedAt\":\"{Escape(data.session.startedAt)}\",");
@@ -410,6 +407,7 @@ namespace OphthalSuite.Core.Database
                     sb.Append($"\"hit\":{(t.hit ? "true" : "false")},");
                     sb.Append($"\"reactionTime\":{t.reactionTime:F3},");
                     sb.Append($"\"fixationLost\":{(t.fixationLost ? "true" : "false")},");
+                    sb.Append($"\"extraJson\":\"{Escape(t.extraJson)}\",");
                     sb.Append($"\"timestamp\":\"{Escape(t.timestamp)}\"");
                     sb.Append("}");
                 }
@@ -429,6 +427,7 @@ namespace OphthalSuite.Core.Database
                     sb.Append($"\"falseNegRate\":{r.falseNegRate:F3},");
                     sb.Append($"\"fixationLoss\":{r.fixationLoss:F3},");
                     sb.Append($"\"reliability\":\"{Escape(r.reliability)}\",");
+                    sb.Append($"\"fullResult\":\"{Escape(r.fullResult)}\",");
                     sb.Append($"\"timestamp\":\"{Escape(r.timestamp)}\"");
                     sb.Append("}");
                 }

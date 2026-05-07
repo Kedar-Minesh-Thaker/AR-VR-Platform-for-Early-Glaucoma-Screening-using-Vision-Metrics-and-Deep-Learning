@@ -23,7 +23,8 @@ namespace OphthalSuite.Core
     public class XRSetup : MonoBehaviour
     {
         // ── Static state ─────────────────────────────────────────────────────────
-        public static bool IsVRActive    { get; private set; }
+        private static bool _isVRActive;
+        public static bool IsVRActive => _isVRActive || XRSettings.isDeviceActive || HasTrackedHeadset();
         public static bool IsInitialised { get; private set; }
 
         [Header("Quest VR")]
@@ -61,7 +62,7 @@ namespace OphthalSuite.Core
         /// </summary>
         public void StartXR()
         {
-            if (IsVRActive) return;
+            if (_isVRActive) return;
 
             var xrManager = XRGeneralSettings.Instance;
             if (xrManager == null || xrManager.Manager == null)
@@ -91,7 +92,7 @@ namespace OphthalSuite.Core
             // Quest 2 optimizations — apply after subsystems are running
             ApplyQuestSettings();
 
-            IsVRActive    = true;
+            _isVRActive   = true;
             IsInitialised = true;
 
             Debug.Log($"XRSetup: ✓ VR active — loader: {xrManager.Manager.activeLoader.name}\n" +
@@ -103,7 +104,7 @@ namespace OphthalSuite.Core
         /// </summary>
         public void StopXR()
         {
-            if (!IsVRActive) return;
+            if (!_isVRActive) return;
 
             var xrManager = XRGeneralSettings.Instance;
             if (xrManager != null && xrManager.Manager != null)
@@ -112,8 +113,14 @@ namespace OphthalSuite.Core
                 xrManager.Manager.DeinitializeLoader();
             }
 
-            IsVRActive = false;
+            _isVRActive = false;
             Debug.Log("XRSetup: VR stopped — flat-screen mode.");
+        }
+
+        private static bool HasTrackedHeadset()
+        {
+            var head = InputDevices.GetDeviceAtXRNode(XRNode.Head);
+            return head.isValid;
         }
 
         /// <summary>
@@ -220,7 +227,7 @@ namespace OphthalSuite.Core
 
         private void OnDestroy()
         {
-            if (IsVRActive) StopXR();
+            if (_isVRActive) StopXR();
             IsInitialised = false;
         }
     }

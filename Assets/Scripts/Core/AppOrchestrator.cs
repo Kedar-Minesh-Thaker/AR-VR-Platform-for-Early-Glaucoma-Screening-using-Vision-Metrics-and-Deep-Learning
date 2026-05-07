@@ -27,6 +27,14 @@ namespace OphthalSuite.Core
         [Tooltip("Before each test, activate only that module's root via VisualTestManager.LoadTest.")]
         [SerializeField] private bool activateTestsViaManager;
 
+        [Header("Instruction UI")]
+        [Tooltip("Assign the TestInstructionUI component. If null, tests start without instructions.")]
+        [SerializeField] private TestInstructionUI instructionUI;
+
+        [Header("Session End UI")]
+        [Tooltip("Assign the SessionEndUI component. Shows summary + Next Patient after all tests.")]
+        [SerializeField] private SessionEndUI sessionEndUI;
+
         [Header("Session Settings")]
         [SerializeField] private float pauseBetweenTestsSec = 3f;
 
@@ -43,6 +51,12 @@ namespace OphthalSuite.Core
         private float _sessionStartTime;
         private int _globalTrialIndex;
         private readonly Dictionary<string, string> _reliabilityByTestId = new Dictionary<string, string>();
+        private bool _skipRestRequested;
+        private bool _skipNextTestRequested;
+        private bool _skipCurrentTestRequested;
+        private bool _returnToMainMenuRequested;
+        private string _requestedSwitchTestId;
+
 
         // CSV writer for unified trial log
         private StreamWriter _csvWriter;
@@ -98,6 +112,10 @@ namespace OphthalSuite.Core
                 Debug.LogError("AppOrchestrator: no tests in session queue (check filter / VisualTestManager).");
                 return;
             }
+
+            if (string.IsNullOrWhiteSpace(patientId)) patientId = "P001";
+            if (string.IsNullOrWhiteSpace(eye)) eye = "OD";
+            age = 0; // Age intentionally not stored for patient sessions.
 
             _ctx = new SessionContext
             {
@@ -162,6 +180,51 @@ namespace OphthalSuite.Core
             FinaliseSession();
         }
 
+        /// <summary>Immediately starts the next test if in a rest period.</summary>
+        public void SkipCurrentRest()
+        {
+            _skipRestRequested = true;
+            Debug.Log("AppOrchestrator: Skip rest requested.");
+        }
+
+        /// <summary>Skips the next scheduled test in the session queue.</summary>
+        public void SkipNextTest()
+        {
+            _skipNextTestRequested = true;
+            Debug.Log("AppOrchestrator: Skip next test requested.");
+        }
+
+        /// <summary>Immediately stops the currently running test and advances.</summary>
+        public void SkipCurrentTest()
+        {
+            _skipCurrentTestRequested = true;
+            Debug.Log("AppOrchestrator: Skip current test requested.");
+        }
+
+        /// <summary>Abort current test and return to main menu (SessionStartUI).</summary>
+        public void ReturnToMainMenu()
+        {
+            _returnToMainMenuRequested = true;
+            _skipCurrentTestRequested = true; // also stops any running test
+            Debug.Log("AppOrchestrator: Return to main menu requested.");
+        }
+
+        /// <summary>Stop the current test and run the requested test next in the same session.</summary>
+        public void SwitchToTest(string testId)
+        {
+            if (string.IsNullOrEmpty(testId)) return;
+            _requestedSwitchTestId = testId;
+            _skipCurrentTestRequested = true;
+            Debug.Log($"AppOrchestrator: switch to test requested — {testId}");
+        }
+
+        /// <summary>Total test count in current session queue.</summary>
+        public int TotalTestCount => _sessionQueue?.Count ?? 0;
+
+        /// <summary>Number of completed tests so far.</summary>
+        public int CompletedTestCount => _testResults?.Count ?? 0;
+
+
         // ── Coroutine: run tests in sequence ─────────────────────────────────────
 
         private IEnumerator RunTestSequence()
@@ -174,15 +237,52 @@ namespace OphthalSuite.Core
                 if (i > 0)
                 {
                     Debug.Log($"AppOrchestrator: pausing {pauseBetweenTestsSec}s before next test…");
-                    // Broadcast a countdown-style state so the dashboard can show it
+                    _skipRestRequested = false;
+                    _skipNextTestRequested = false;
+                    
                     BroadcastSessionState();
-                    yield return new WaitForSeconds(pauseBetweenTestsSec);
+                    
+                    float restTimer = 0;
+                    while (restTimer < pauseBetweenTestsSec && !_skipRestRequested && !_skipNextTestRequested)
+                    {
+                        restTimer += Time.deltaTime;
+                        yield return null;
+                    }
+
+                    if (_skipNextTestRequested)
+                    {
+                        Debug.Log("AppOrchestrator: Skipping test module " + _sessionQueue[i].TestId);
+                        continue;
+                    }
+                }
+
+                if (!_sessionRunning) yield break;
+
+                // ── Show pre-test instruction screen ─────────────────────────
+                var upcomingTest = _sessionQueue[i];
+                if (instructionUI != null)
+                {
+                    instructionUI.ShowInstruction(upcomingTest, i + 1, _sessionQueue.Count);
+
+                    // Wait until patient presses START or SKIP
+                    while (instructionUI.IsShowing && _sessionRunning)
+                        yield return null;
+
+                    if (!_sessionRunning) yield break;
+
+                    if (instructionUI.WasSkipped)
+                    {
+                        Debug.Log($"AppOrchestrator: Patient skipped test {upcomingTest.TestId} from instruction screen.");
+                        SavePartialResult(upcomingTest, "skipped_before_start");
+                        continue;
+                    }
                 }
 
                 if (!_sessionRunning) yield break;
 
                 _currentTestIndex = i;
                 var test = _sessionQueue[i];
+                _skipCurrentTestRequested = false;
 
                 if (activateTestsViaManager && visualTestManager != null)
                     visualTestManager.LoadTest(test.TestId);
@@ -198,12 +298,55 @@ namespace OphthalSuite.Core
                 // Start test
                 test.StartTest(_ctx);
 
-                // Wait until test completes
-                while (test.IsRunning)
+                // Wait until test completes or is skipped
+                while (test.IsRunning && !_skipCurrentTestRequested)
                     yield return null;
+
+                // If skip was requested, force-stop the running test
+                if (_skipCurrentTestRequested && test.IsRunning)
+                {
+                    Debug.Log($"AppOrchestrator: Force-stopping test {test.TestId} (skip requested).");
+
+                    // ── Save partial result before stopping ─────────────────────
+                    SavePartialResult(test);
+
+                    UnsubscribeTest(test);
+                    test.StopTest();
+                    _skipCurrentTestRequested = false;
+                }
+
+                if (!string.IsNullOrEmpty(_requestedSwitchTestId))
+                {
+                    var next = FindRegisteredTest(_requestedSwitchTestId);
+                    string targetId = _requestedSwitchTestId;
+                    _requestedSwitchTestId = null;
+
+                    if (next != null)
+                    {
+                        for (int j = _sessionQueue.Count - 1; j > i; j--)
+                        {
+                            if (_sessionQueue[j].TestId == next.TestId)
+                                _sessionQueue.RemoveAt(j);
+                        }
+
+                        _sessionQueue.Insert(i + 1, next);
+                        Debug.Log($"AppOrchestrator: queued switched test next — {targetId}");
+                    }
+                    else
+                    {
+                        Debug.LogWarning($"AppOrchestrator: requested switch target not registered — {targetId}");
+                    }
+                }
+
+                // Return to main menu if requested
+                if (_returnToMainMenuRequested)
+                {
+                    _returnToMainMenuRequested = false;
+                    break; // exit the test loop, go to FinaliseSession
+                }
             }
 
-            // All tests done
+            // All tests done (or main menu requested)
             yield return null;
             FinaliseSession();
         }
@@ -220,6 +363,16 @@ namespace OphthalSuite.Core
         {
             test.OnTrialEnd    -= HandleTrialEnd;
             test.OnTestComplete -= HandleTestComplete;
+        }
+
+        private ITestModule FindRegisteredTest(string testId)
+        {
+            foreach (var t in _tests)
+            {
+                if (t != null && t.TestId == testId)
+                    return t;
+            }
+            return null;
         }
 
         // ── Event handlers ───────────────────────────────────────────────────────
@@ -329,6 +482,53 @@ namespace OphthalSuite.Core
             }
 
             Debug.Log($"AppOrchestrator: session ended — {_ctx.sessionId} ({totalDuration:F1}s)");
+
+            // Show session-end summary with "Next Patient" button
+            if (sessionEndUI != null)
+            {
+                sessionEndUI.Show(_testResults, _ctx, totalDuration);
+            }
+        }
+
+        /// <summary>
+        /// Called by SessionEndUI when "Next Patient" is clicked.
+        /// Resets state so SessionStartUI can re-appear.
+        /// </summary>
+        public void PrepareNextPatient()
+        {
+            _ctx = null;
+            _currentTestIndex = -1;
+            _testResults.Clear();
+            _reliabilityByTestId.Clear();
+            Debug.Log("AppOrchestrator: Ready for next patient.");
+        }
+
+        /// <summary>
+        /// Saves a partial TestResult when a test is skipped mid-execution.
+        /// This ensures we never lose data even if the operator skips.
+        /// </summary>
+        private void SavePartialResult(ITestModule test, string reason = "skipped_partial")
+        {
+            var partial = new TestResult
+            {
+                testId              = test.TestId,
+                displayName         = test.DisplayName,
+                sessionId           = _ctx?.sessionId ?? "",
+                durationSeconds     = 0,
+                falsePosRate        = 0,
+                falseNegRate        = 0,
+                fixationLossRate    = 0,
+                reliabilityCategory = "Partial",
+                fullResultJson      = "{\"status\":\"" + reason + "\",\"testId\":\"" + EscapeJson(test.TestId) + "\",\"timestampUtc\":\"" + DateTime.UtcNow.ToString("o") + "\"}",
+                timestamp           = DateTime.UtcNow.ToString("o")
+            };
+
+            _testResults.Add(partial);
+            _reliabilityByTestId[test.TestId] = "Partial";
+            WritePerTestResult(partial);
+            DatabaseManager.Instance?.InsertTestResult(partial);
+
+            Debug.Log($"AppOrchestrator: Saved partial result for skipped test {test.TestId}.");
         }
 
         // ── Per-test result files ────────────────────────────────────────────────
@@ -523,6 +723,12 @@ namespace OphthalSuite.Core
             if (s.Contains(",") || s.Contains("\"") || s.Contains("\n"))
                 return "\"" + s.Replace("\"", "\"\"") + "\"";
             return s;
+        }
+
+        private static string EscapeJson(string s)
+        {
+            if (string.IsNullOrEmpty(s)) return "";
+            return s.Replace("\\", "\\\\").Replace("\"", "\\\"").Replace("\n", "\\n");
         }
 
         private static string ToJsonArray(List<TestResult> results)

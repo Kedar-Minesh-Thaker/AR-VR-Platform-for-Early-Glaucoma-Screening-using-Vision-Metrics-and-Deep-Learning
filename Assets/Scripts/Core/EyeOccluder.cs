@@ -39,6 +39,16 @@ namespace OphthalSuite.Core
                 // Fallback: try a URP-compatible shader
                 shader = Shader.Find("Universal Render Pipeline/Unlit");
             }
+            if (shader == null)
+            {
+                shader = Shader.Find("Sprites/Default");
+            }
+            if (shader == null)
+            {
+                Debug.LogWarning("EyeOccluder: no compatible shader found; eye occlusion disabled.");
+                enabled = false;
+                return;
+            }
             _blackMat = new Material(shader);
             _blackMat.color = Color.black;
         }
