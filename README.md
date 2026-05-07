@@ -1,3 +1,10 @@
+# AR-VR platform for early glaucoma screening (vision metrics & deep learning)
+
+**Repository:** [AR-VR-Platform-for-Early-Glaucoma-Screening-using-Vision-Metrics-and-Deep-Learning](https://github.com/Kedar-Minesh-Thaker/AR-VR-Platform-for-Early-Glaucoma-Screening-using-Vision-Metrics-and-Deep-Learning)  
+Unity URP project (DhrishtiLite / OphthalSuite) — clinical test battery, Meta Quest support, optional ML diagnosis pipeline under `ml/`.
+
+---
+
 # OphthalSuite — Unified Unity URP Clinical Test App
 
 Research-oriented ophthalmic test battery for **Android (patient phone)** and **laptop clinician view**. This README describes the **final integrated layout (Part 4)**, folder structure, setup, and how components connect.
@@ -223,4 +230,3 @@ Use these exact strings in Unity and JavaScript:
 
 ---
 
-*End of unified integration (menu + doctor control + mirror + logging).*
