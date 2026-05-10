@@ -85,3 +85,16 @@ ClinicalViewer/logs/
 .plastic/
 .utmp/
 Assets/_Recovery/
+
+# ── Local-only / sensitive — kept on machine, excluded from public repos ──
+augmented_training_data.csv
+diagnosis_manual.json
+ignore.conf
+
+# ML trained weights & generated outputs (scripts like infer_session.py stay tracked)
+ml/*.keras
+ml/*.h5
+ml/predictions.json
+ml/__pycache__/
+**/__pycache__/
+*.pyc
