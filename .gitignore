@@ -91,10 +91,67 @@ augmented_training_data.csv
 diagnosis_manual.json
 ignore.conf
 
-# ML trained weights & generated outputs (scripts like infer_session.py stay tracked)
+# ML trained weights & generated outputs
 ml/*.keras
 ml/*.h5
 ml/predictions.json
 ml/__pycache__/
 **/__pycache__/
 *.pyc
+
+# ──────────────────────────────────────────────────────────────────────────────
+# Project-specific source kept LOCAL ONLY (never pushed to public repo).
+# Files remain on disk; they are simply not tracked by git.
+# These rules come last so they override the `!/Assets/**/*.meta` re-include.
+# ──────────────────────────────────────────────────────────────────────────────
+
+# Python ML pipeline (architecture + inference)
+ml/train_multimodal_cnn.py
+ml/infer_session.py
+
+# Perimetry algorithm core (24-2 staircase / QUEST / heatmap / reliability)
+Assets/Scripts/Perimetry/
+Assets/Scripts/Perimetry.meta
+
+# Clinical test modules (folders + their parent .meta files)
+Assets/Scripts/ClinicalTests/
+Assets/Scripts/ClinicalTests.meta
+
+# Contrast-sensitivity test modules (folders + their parent .meta files)
+Assets/Scripts/ContrastSensitivity/
+Assets/Scripts/ContrastSensitivity.meta
+
+# Scene wiring (full component graph for the live build)
+Assets/Scenes/SampleScene.unity
+Assets/Scenes/SampleScene.unity.meta
+Assets/Scenes.meta
+Assets/OphthalSuite.unity
+Assets/OphthalSuite.unity.meta
+
+# Clinical test prefabs (wire components -> scripts)
+Assets/Prefabs/
+Assets/Prefabs.meta
+
+# 24-2 grid reference data + test catalog
+Assets/Resources/Data/Grid24_2.csv
+Assets/Resources/Data/Grid24_2.csv.meta
+Assets/Resources/Data.meta
+Assets/Resources/DefaultOphthalTestCatalog.asset
+Assets/Resources/DefaultOphthalTestCatalog.asset.meta
+
+# Doctor-laptop dashboard server
+ClinicalViewer/
+
+# Old perimetry support / web demo (duplicate of algorithm)
+perimetrysupport/
+
+# Clinical-test unit tests (expose algorithm contracts)
+Assets/Tests/PerimetryTests.cs
+Assets/Tests/PerimetryTests.cs.meta
+
+# Reproduction docs (architecture + step-by-step setup guide)
+INTEGRATION.md
+walkthrough.md
+
+# Local helper scripts (not part of the public project)
+scrub-history.ps1
