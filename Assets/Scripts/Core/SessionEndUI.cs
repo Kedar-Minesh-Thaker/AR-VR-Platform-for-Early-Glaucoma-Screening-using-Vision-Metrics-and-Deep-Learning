@@ -68,16 +68,21 @@ namespace OphthalSuite.Core
             }
             finally
             {
-                // This is the last block of the method, guaranteeing it triggers
-                // even if the UI card creation fails above.
+                // Re-parent DiagnosisDisplay into the card's bottom strip so it
+                // never overlaps the per-test result cards.
                 string sid = ctx != null ? ctx.sessionId : "";
                 var display = FindFirstObjectByType<OphthalSuite.Core.DiagnosisDisplay>();
                 if (display != null)
                 {
-                    display.ShowForSession(sid);
-                    // TASK 4: Move DiagnosisDisplay panel to the top of the UI hierarchy
-                    display.transform.SetParent(_canvas.transform, false);
+                    display.transform.SetParent(_card.transform, false);
+                    var diagRt = display.GetComponent<RectTransform>();
+                    if (diagRt == null) diagRt = display.gameObject.AddComponent<RectTransform>();
+                    diagRt.anchorMin = new Vector2(0.03f, 0.14f);
+                    diagRt.anchorMax = new Vector2(0.97f, 0.165f);
+                    diagRt.offsetMin = Vector2.zero;
+                    diagRt.offsetMax = Vector2.zero;
                     display.transform.SetAsLastSibling();
+                    display.ShowForSession(sid);
                 }
             }
         }
@@ -234,7 +239,8 @@ namespace OphthalSuite.Core
             catBadgeImg.sprite = UIStyleKit.MakeRoundedRect(200, 50, 20,
                 new Color(catColor.r * 0.2f, catColor.g * 0.2f, catColor.b * 0.2f, 0.9f),
                 catColor, 2);
-            catBadgeImg.type = Image.Type.Sliced;
+            catBadgeImg.type = Image.Type.Simple;
+            catBadgeImg.preserveAspect = false;
 
             UIStyleKit.MakeText(catBadgeGo.transform, "CatBadgeText",
                 Vector2.zero, Vector2.one,
@@ -248,7 +254,8 @@ namespace OphthalSuite.Core
             badgeImg.sprite = UIStyleKit.MakeRoundedRect(200, 50, 20,
                 new Color(badgeColor.r * 0.2f, badgeColor.g * 0.2f, badgeColor.b * 0.2f, 0.9f),
                 badgeColor, 2);
-            badgeImg.type = Image.Type.Sliced;
+            badgeImg.type = Image.Type.Simple;
+            badgeImg.preserveAspect = false;
 
             UIStyleKit.MakeText(badgeGo.transform, "BadgeText",
                 Vector2.zero, Vector2.one,
